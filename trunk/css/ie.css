@@ -1,0 +1,43 @@
+#breadcrumbs {line-height: 28px;height: 25px;padding: 0;border-radius:4px;behavior: url('templates/impacto/css/PIE.php');}
+#breadcrumbs .sep,#breadcrumbs a.pathway,#breadcrumbs .curpage {position: relative;top: 0px;*top: -2px;}
+#content .note {border-radius:8px;behavior: url('templates/impacto/css/PIE.php');}
+#message {display: inline;}
+blockquote {width: 640px;position: relative;display: inline-block;}
+#header.image {padding-top: 20px;}
+/* Your header will break if you remove any of the rules below */
+#header span#graphic a,#header h1#graphic a {position: relative;}
+#header.image_top {padding-top: 0px;}
+#header.image span#graphic.image,#header.image h1#graphic.image {position: absolute;}
+
+
+
+.sidebar,.moduletable {
+	padding: 0;
+	margin: 0;
+}
+#content {
+	padding: 0px 10px;
+	margin: 0;
+}
+.article_column,.colpad,.blog {padding: 0px;width: 100%;display:block;}
+
+
+#nav .menu li.current_page_item a span.sf-sub-indicator {
+	display: none;
+	visibility: hidden;
+	background-image: none;
+	position: static;
+
+}
+#nav .menu li li.current_page_item {
+	background-image: none;
+	height: 30px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+#main .mid_5_c_5,#main .mid_6_c_5,#main .mid_7_c_5,#main .mid_8_c_5,#main .mid_9_c_5,#main .mid_10_c_5,#main .mid_5_c_6,#main .mid_6_c_6,#main .mid_7_c_6,#main .mid_8_c_6,#main .mid_9_c_6,#main .mid_10_c_6,#main .mid_5_c_7,#main .mid_6_c_7,#main .mid_7_c_7,#main .mid_8_c_7,#main .mid_9_c_7,#main .mid_10_c_7,#main .mid_5_c_8,#main .mid_6_c_8,#main .mid_7_c_8,#main .mid_8_c_8,#main .mid_9_c_8,#main .mid_10_c_8,#main .mid_5_c_9,#main .mid_6_c_9,#main .mid_7_c_9,#main .mid_8_c_9,#main .mid_9_c_9,#main .mid_10_c_9,#main .mid_5_c_10,#main .mid_6_c_10,#main .mid_7_c_10,#main .mid_8_c_10,#main .mid_9_c_10,#main .mid_10_c_10,#main .mid_5_5_c,#main .mid_6_5_c,#main .mid_7_5_c,#main .mid_8_5_c,#main .mid_9_5_c,#main .mid_10_5_c,#main .mid_5_6_c,#main .mid_6_6_c,#main .mid_7_6_c,#main .mid_8_6_c,#main .mid_9_6_c,#main .mid_10_6_c,#main .mid_5_7_c,#main .mid_6_7_c,#main .mid_7_7_c,#main .mid_8_7_c,#main .mid_9_7_c,#main .mid_10_7_c,#main .mid_5_8_c,#main .mid_6_8_c,#main .mid_7_8_c,#main .mid_8_8_c,#main .mid_9_8_c,#main .mid_10_8_c,#main .mid_5_9_c,#main .mid_6_9_c,#main .mid_7_9_c,#main .mid_8_9_c,#main .mid_9_9_c,#main .mid_10_9_c,#main .mid_5_10_c,#main .mid_6_10_c,#main .mid_7_10_c,#main .mid_8_10_c,#main .mid_9_10_c,#main .mid_10_10_c,#main .mid_c_5_5,#main .mid_c_6_5,#main .mid_c_7_5,#main .mid_c_8_5,#main .mid_c_9_5,#main .mid_c_10_5,#main .mid_c_5_6,#main .mid_c_6_6,#main .mid_c_7_6,#main .mid_c_8_6,#main .mid_c_9_6,#main .mid_c_10_6,#main .mid_c_5_7,#main .mid_c_6_7,#main .mid_c_7_7,#main .mid_c_8_7,#main .mid_c_9_7,#main .mid_c_10_7,#main .mid_c_5_8,#main .mid_c_6_8,#main .mid_c_7_8,#main .mid_c_8_8,#main .mid_c_9_8,#main .mid_c_10_8,#main .mid_c_5_9,#main .mid_c_6_9,#main .mid_c_7_9,#main .mid_c_8_9,#main .mid_c_9_9,#main .mid_c_10_9,#main .mid_c_5_10,#main .mid_c_6_10,#main .mid_c_7_10,#main .mid_c_8_10,#main .mid_c_9_10,#main .mid_c_10_10,#main .mid_r_19,#main .mid_r_18,#main .mid_r_17,#main .mid_r_16,#main .mid_r_15,#main .mid_r_14,#main .mid_l_19,#main .mid_l_18,#main .mid_l_17,#main .mid_l_16,#main .mid_l_15,#main .mid_l_14 {height: 1%;background-image: none;background-color: #fff;}
+
+#main {background-color: #fff;}
+

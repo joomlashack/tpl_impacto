@@ -1,0 +1,60 @@
+
+/* Three Column Layout */
+
+/* 988px */
+.grid_24 .one_half {width:488px;}
+.grid_24 .one_third {width:320px;}
+.grid_24 .one_fourth {width:239px;}
+.grid_24 .two_thirds {width:615px;}
+.grid_24 .three_fourths {width:695.5px;}
+
+.grid_20 .one_half {width:380px;}
+.grid_20 .one_third {width:245px;}
+.grid_20 .one_fourth {width:180px;}
+.grid_20 .two_thirds {width:485px;}
+.grid_20 .three_fourths {width:575.5px;}
+
+.grid_19 .one_half {width:360px;}
+.grid_19 .one_third {width:235px;}
+.grid_19 .one_fourth {width:175px;}
+.grid_19 .two_thirds {width:485px;}
+.grid_19 .three_fourths {width:545.5px;}
+
+.grid_18 .one_half {width:340px;}
+.grid_18 .one_third {width:220px;}
+.grid_18 .one_fourth {width:160px;}
+.grid_18 .two_thirds {width:460px;}
+.grid_18 .three_fourths {width:515.5px;}
+
+.grid_17 .one_half {width:320px;}
+.grid_17 .one_third {width:210px;}
+.grid_17 .one_fourth {width:155px;}
+.grid_17 .two_thirds {width:430px;}
+.grid_17 .three_fourths {width:712.5px;}
+
+.grid_16 .one_half {width:300px;}
+.grid_16 .one_third {width:196px;}
+.grid_16 .one_fourth {width:144px;}
+.grid_16 .two_thirds {width:396px;}
+.grid_16 .three_fourths {width:712.5px;}
+
+
+.one_half, .one_third, .one_fourth, .two_thirds, .three_fourths{
+	float:left; margin-right:10px; height:auto; overflow:hidden; margin-bottom:10px;
+}
+
+.last {margin-right:0 !important;}
+
+code {
+white-space:normal;
+background-color:#EBEBEB;
+border-bottom:1px solid #CCCCCC;
+border-top:1px solid #CCCCCC;
+display:block;
+font:12px/24px Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+margin:5px 0;
+padding:5px;
+white-space:pre;
+
+}
+
