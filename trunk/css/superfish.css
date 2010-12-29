@@ -1,4 +1,4 @@
-#nav {height: 46px;margin: 0 auto;z-index: 5000;font-size: 15px;position:relative;}
+#nav {height: 46px;margin: 0 auto;z-index: 2000;font-size: 15px;position:relative;}
 #nav ul,#nav ul li {list-style: none;float: left;line-height: 46px;}
 #nav ul {margin: 0;padding: 0;}
 #nav ul li {margin: 0;position: relative;}
