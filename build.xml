@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<project name="Onyx" default="build">
+
+	<!-- Builds the Nivo Slider -->
+	<target name="template">
+		<mkdir dir=".nivo" />
+		<copy todir=".nivo" overwrite="true">
+			<fileset dir="files/data/modules/mod_nivoslider" />
+		</copy>
+		<zip destfile="mod_nivoslider.zip" basedir=".nivo" />
+		<delete dir=".nivo" />
+	</target>
+	
+	<target name="zipper">
+		<copy file="files/data/Impacto_QuickLauncher_J15.zip" tofile="${path.zip}/quicklauncher/Impacto_QuickLauncher_J15.zip" overwrite="true" />
+		<copy file="files/data/mod_bodyclass.zip" tofile="${path.zip}/extensions/mod_bodyclass.zip" overwrite="true" />
+		<copy file="files/data/ExampleLandingPage.txt" tofile="${path.zip}/ExampleLandingPage.txt" overwrite="true" />
+		<copy file="files/data/readme.html" tofile="${path.zip}/readme.html" overwrite="true" />
+	</target>
+	
+</project>
