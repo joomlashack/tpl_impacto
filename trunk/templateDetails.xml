@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <install version="1.5" type="template">
-	<name>impacto</name>
+	<name>js_impacto</name>
 	<version>1.8</version>
 	<creationDate>09/16/10</creationDate>
 	<author>Casey Lee</author>
