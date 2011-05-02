@@ -387,7 +387,7 @@ table.contentpaneopen ul, table.contentpaneopen ol {
 }
 
 span.pagination {
-	position: absolute;
+	position: relative;
 	width: 97%;
 	text-align: center;
 	margin: 0px auto;
