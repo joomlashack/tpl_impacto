@@ -1,0 +1,13 @@
+#breadcrumbs {line-height: 28px;height: 25px;padding: 0;border-radius:4px;behavior: url('templates/impacto/css/PIE.php');}
+#breadcrumbs .sep,#breadcrumbs a.pathway,#breadcrumbs .curpage {position: relative;top: 0px;*top: 2px;}
+#content .note {border-radius:8px;behavior: url('templates/impacto/css/PIE.php');}
+#message {display: inline;}
+blockquote {width: 640px;position: relative;display: inline-block;}
+/* Your header will break if you remove any of the rules below */
+#header span#graphic a,#header h1#graphic a {position: relative;}
+#header.image span#graphic.image,#header.image h1#graphic.image {position: absolute;}
+.innerwrap {width: 1008px;margin: 0px auto;height: 100%;position: relative;}
+#topnav {position: relative;float: right;margin-top: 0px;display: inline-block;right: 0px;width: 100%;text-align: right;}
+div.bigbutton a {padding: 0px 20px 0px 3px;}
+#leader {padding: 0px 0px 10px 0px;position:static;top: -10px;}
+
