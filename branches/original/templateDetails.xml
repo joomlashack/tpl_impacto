@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="template">
+	<name>js_impacto</name>
+	<version>1.8</version>
+	<creationDate>09/16/10</creationDate>
+	<author>Casey Lee</author>
+	<copyright>SimpleThemes LLC for Joomlashack.com</copyright>
+	<authorEmail>support@joomlashack.com</authorEmail>
+	<authorUrl>http://www.simplethemes.com</authorUrl>
+	<license>Commercial License - Individual Domain</license>
+	<description>Thanks for purchasing the Impacto Joomla template!</description>
+<files>
+	<filename>component.php</filename>
+	<filename>index.php</filename>
+	<filename>templateDetails.xml</filename>
+	<filename>params.ini</filename>
+	<filename>stprefs.php</filename>
+	<filename>template_thumbnail.png</filename>
+	<folder>css/</folder>
+	<folder>html/</folder>
+	<folder>images/</folder>
+	<folder>js/</folder>
+</files>
+<positions>
+	<position>topmenu</position>
+	<position>menu</position>
+	<position>featured</position>
+	<position>headerad</position>
+	<position>left</position>
+	<position>right</position>
+	<position>above_content</position>
+	<position>below_content</position>
+	<position>breadcrumbs</position>
+	<position>Leader1</position>
+	<position>Leader2</position>
+	<position>Leader3</position>
+	<position>Footer1</position>
+	<position>Footer2</position>
+	<position>Footer3</position>
+	<position>copyright</position>
+	<position>bodyclass</position>
+</positions>
+<params>
+	<param name="headerstyle" type="list" default="text" label="Header Type" description="Header display method: Image should be 32-bit transparent PNG or must match body background image.">
+		<option value="image">Graphic</option>
+		<option value="text">Text</option>
+	</param>
+	<param name="header_width" type="text" default="250" label="Logo Width (px)" size="30" description="Logo Width (when header style = image)"></param>
+	<param name="header_height" type="text" default="60" label="Logo Height (px)" size="30" description="Logo Height (when header style = image"></param>
+	<param name="header_top_pad" type="text" default="10" label="Header Top Padding" size="30" description="Adds margin to the top of your logo"></param>
+	<param name="header_bot_pad" type="text" default="15" label="Header Bottom Padding" size="30" description="Adds margin to the bottom of your logo"></param>
+	<param name="headline" type="text" default="Impacto" label="Site Title" size="30" description="The site title is rendered for SEO purposes so it is important to custommize this regardless of 'text' or 'graphic' Header Mode (configured above)."></param>
+	<param name="tagline" type="text" default="A sleek and professional Joomla Template" label="Tagline" size="30" description="The site description is rendered for SEO purposes so it is important to custommize this regardless of 'text' or 'graphic' Header Mode (configured above)."></param>
+	<param name="style" type="list" default="style2" label="Theme Style" description="Select the color style to display">
+		<option value="style1">Style 1</option>
+		<option value="style2">Style 2</option>
+		<option value="style3">Style 3</option>
+		<option value="style4">Style 4</option>
+	</param>
+	<param name="layoutstyle" type="list" default="LRC" label="Layout Style" description="Column Display Order: (SEO Note: Source ordering is not a factor here. Your content will always appear first in Google.)">
+		<option value="LRC"> {left} | {right} | {content}</option>
+		<option value="CLR">{content} | {left} | {right}</option>
+		<option value="LCR">{left} | {content} | {right}</option>
+	</param>
+	<param name="leftcolwidth" type="list" default="7" label="Left Column Width" description="Width of the left module column">
+		<option value="10">400px</option>
+		<option value="9">360px</option>
+		<option value="8">320px</option>
+		<option value="7">280px</option>
+		<option value="6">240px</option>
+		<option value="5">200px</option>
+	</param>
+	<param name="rightcolwidth" type="list" default="7" label="Right Column Width" description="Width of the right module column">
+		<option value="10">400px</option>
+		<option value="9">360px</option>
+		<option value="8">320px</option>
+		<option value="7">280px</option>
+		<option value="6">240px</option>
+		<option value="5">200px</option>
+	</param>
+	<param name="footerheight" type="text" default="150" label="Footer Height" size="30" description="This template footer uses a clearing method called 'sticky footer' which keeps the footer at the bottom of the page at all times. You must set the height of your footer here."></param>
+	<param name="mootools_enabled" type="radio" default="1" label="Mootools Enabled" description="Force enabling/disabling of Mootools. You can safely disable this if you do not plan on using the frontend editing capabilities of Joomla! or do not have any third party components that rely on the mootools library.">
+		<option value="0">NO</option>
+		<option value="1">YES</option>
+	</param>
+	<param name="caption_enabled" type="radio" default="1" label="Captions Enabled" description="Force disabling of Captions JavaScript, Mootools is required for Captions to work.">
+		<option value="0">NO</option>
+		<option value="1">YES</option>
+	</param>
+</params>
+</install>
