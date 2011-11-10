@@ -238,7 +238,7 @@ div.small {
 #topnav ul,#topnav ul li {float:left;list-style: none;margin: 0;padding: 0;}
 #topnav ul ul {display: none;}
 #topnav a {padding: 5px 5px;line-height: 15px;font-size: 11px;}
-div#topnav span.separator img {padding-top: 3px;}
+div#topnav span.separator {font-size: 18px;line-height: 18px;padding: 5px}
 /* @end */
 
 
