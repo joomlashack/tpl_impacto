@@ -59,9 +59,9 @@ defined('_JEXEC') or die('Restricted access');
 <div id="pagewrap">
        <div id="header" class="image">
 			<div class="innerwrap">
-				<?php if ($this->countModules( 'topmenu' )) : ?>
+				<?php if ($this->countModules( 'top' )) : ?>
 					<div id="topnav">
-                            <w:nav name="topmenu" chrome="none" />
+                            <w:nav name="top" chrome="none" />
 					</div>
 				<?php endif; ?>
                       <w:logo chrome="none"/>

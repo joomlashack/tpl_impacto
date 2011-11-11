@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <install version="1.5" type="template" method="upgrade">
-  <name>Js_impacto</name>
+  <name>js_impacto</name>
   <creationDate>Aug 2011</creationDate>
   <author>Joomlashack</author>
   <authorEmail>support@joomlashack.com</authorEmail>
@@ -32,25 +32,20 @@
     <position>banner</position>
     <position>below-content</position>
 	<position>breadcrumbs</position>
-    <position>bottommenu</position>
     <position>bodyclass</position>
     <position>breadcrumb</position>
     <position>debug</position>
     <position>footer</position>
-    <position>grid-bottom1</position>
-    <position>grid-bottom2</position>
-    <position>grid-bottom3</position>
-    <position>grid-top1</position>
-    <position>grid-top2</position>
-    <position>grid-top3</position>
+    <position>grid-bottom</position>
+    <position>grid-top</position>
     <position>logo</position>
     <position>menu</position>
     <position>newsflash</position>
     <position>sidebar1</position>
     <position>sidebar2</position>
-    <position>topmenu</position>
+    <position>top</position>
   </positions>
-  <params addpath="/templates/Js_impacto/wright/parameters/joomla_1.5">
+  <params addpath="/templates/js_impacto/wright/parameters/joomla_1.5">
     <!-- Start of default Wright params -->
     <param name="helper" type="help" label="Need Help?" />
     <param name="rebrand" type="rebrand" default="no" label="Remove Branding" description="This setting removes the branding from the footer of the template." />
@@ -74,7 +69,7 @@
     <!-- End of default Wright params -->
   </params>
   <config>
-    <fields name="params" addfieldpath="/templates/Js_impacto/wright/parameters/joomla_1.6">
+    <fields name="params" addfieldpath="/templates/js_impacto/wright/parameters/joomla_1.6">
       <fieldset name="basic">
         <!-- Start of default Wright params -->
         <field name="helper" type="help" label="Need Help?" />
