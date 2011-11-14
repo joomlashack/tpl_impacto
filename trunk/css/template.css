@@ -1288,18 +1288,18 @@ ul.left li,ul.right li {
 	list-style: none;
 	line-height: 150%;
 	font-size: 12px;
-	margin-bottom: 20px;
-	margin-top: 10px;
+	margin: 10px 0 20px 0;
+	padding: 0;
 	color: #575757;
 }
 ul.left {
 	float: left;
-	width: 280px;
+	width: 270px;
 	font-size: 12px;
 }
 ul.right {
 	float: right;
-	width: 280px;
+	width: 270px;
 }
 
 ul.right span,
@@ -1453,3 +1453,38 @@ overflow:hidden;
 /* Makes the Left and Right module text sizes slightly smaller
 
 /* end of compare */
+
+/* @group content columns CSS */
+
+/* Three Column Layout */
+
+/* 960px */
+.grid_12 .one_half {width:470px;}
+.grid_12 .one_third {width:305px;}
+.grid_12 .one_fourth {width:220px;}
+
+
+.one_half, .one_third, .one_fourth {
+	float:left; margin-right:10px; height:auto; overflow:hidden; margin-bottom:10px;
+}
+
+.last {margin-right:0 !important;}
+
+code {
+white-space:normal;
+background-color:#EBEBEB;
+border-bottom:1px solid #CCCCCC;
+border-top:1px solid #CCCCCC;
+display:block;
+font:12px/24px Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+margin:5px 0;
+padding:5px;
+white-space:pre;
+
+}
+/* @end */
+
+/* @group column adjustments */
+
+
+/* @end */
