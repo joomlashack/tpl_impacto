@@ -269,7 +269,9 @@ div.bigbutton a span.title {
 }
 
 #nav ul li.current a,
-#nav ul li.current a:hover {
+#nav ul li.current a:hover,
+#nav ul li#current a,
+#nav ul li#current a:hover {
 	color: #fff;
 	text-shadow: #0564c0 1px 1px 1px;
 	background: url(../images/style2/nav_active.png) repeat-x;
