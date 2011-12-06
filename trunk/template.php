@@ -123,7 +123,7 @@ defined('_JEXEC') or die('Restricted access');
 						   <div class="clear"></div>
 						 </div>
 						<div class="clear"></div>
-						<div id="bottom"> <w:module type="single" name="copyright" chrome="none" />  </div>
+						<div id="bottom"> <w:module type="single" name="footer" chrome="none" />  </div>
 						<div class="copy">
 							<w:footer />
 						</div>
