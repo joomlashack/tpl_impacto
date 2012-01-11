@@ -127,6 +127,7 @@ defined('_JEXEC') or die('Restricted access');
 						<div class="copy">
 							<w:footer />
 						</div>
+						<div class="clear"></div>
 				</div><!-- /container_24 -->
                 <div class="clear"></div>
 		  	</div><!-- /#footer -->
