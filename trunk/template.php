@@ -43,8 +43,6 @@ defined('_JEXEC') or die('Restricted access');
 </script>
 
 <w:head />
-<link href="<?php echo $this->baseurl;?>/templates/<?php echo $this->document->template;?>/css/superfish.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="<?php echo $this->baseurl;?>/templates/<?php echo $this->document->template;?>/css/template.css" rel="stylesheet" type="text/css" media="screen" />
 <!--[if IE 6]>
 <link href="<?php echo $this->baseurl;?>/templates/<?php echo $this->template;?>/css/ie.css" rel="stylesheet" type="text/css" media="screen" />
 <![endif]-->
