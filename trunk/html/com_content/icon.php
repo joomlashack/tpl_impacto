@@ -5,7 +5,7 @@ class GetArtIcon
 {
 	function create($article, $params, $access, $attribs = array())
 	{
-		$uri =& JFactory::getURI();
+		$uri = JFactory::getURI();
 		$ret = $uri->toString();	
 	
 		$url = 'index.php?task=new&ret='.base64_encode($ret).'&id=0&sectionid='.$article->sectionid;
@@ -44,7 +44,7 @@ class GetArtIcon
 
 	function email($article, $params, $access, $attribs = array())
 	{
-		$uri	=& JURI::getInstance();
+		$uri	= JURI::getInstance();
 		$base	= $uri->toString( array('scheme', 'host', 'port'));
 		$link	= $base.JRoute::_( ContentHelperRoute::getArticleRoute($article->slug, $article->catslug, $article->sectionid) , false );
 		$url	= 'index.php?option=com_mailto&tmpl=component&link='.base64_encode( $link );
@@ -66,8 +66,8 @@ class GetArtIcon
 
 	function edit($article, $params, $access, $attribs = array())
 	{
-		$user =& JFactory::getUser();
-		$uri =& JFactory::getURI();
+		$user = JFactory::getUser();
+		$uri = JFactory::getURI();
 		$ret = $uri->toString();
 
 		if ($params->get('popup')) {

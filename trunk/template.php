@@ -11,6 +11,11 @@
 
 // no direct access
 defined('_JEXEC') or die('Restricted access');
+
+class WrightTemplate extends WrightTemplateBase {
+	public $suffixes = true;  // allows stacked suffixes
+}
+
 ?>
 <doctype>
 <html>
@@ -100,12 +105,12 @@ defined('_JEXEC') or die('Restricted access');
 					</div>
 					<aside id="sidebar1">
 						<div class="sidebar">
-							<w:module name="sidebar1" chrome="xhtml" />
+							<w:module name="sidebar1" chrome="wrightgrid" />
 						</div>
 					</aside>
 					<aside id="sidebar2">
 						<div class="sidebar">
-							<w:module name="sidebar2" chrome="xhtml" />
+							<w:module name="sidebar2" chrome="wrightgrid" />
 						</div>
 					</aside>
                   </div>
