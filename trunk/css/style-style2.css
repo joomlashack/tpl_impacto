@@ -262,7 +262,7 @@ div.bigbutton a span.title {
 
 
 #nav ul li a:hover,
-#nav ul li:hover a {
+#nav ul li:hover > a {
 	color: #96cb24;
 	text-shadow: #1a2406 0 -1px 1px;
 	background: url(../images/style2/nav_hover.png) repeat-x;
