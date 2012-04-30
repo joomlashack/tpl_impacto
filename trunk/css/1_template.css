@@ -277,7 +277,7 @@ input[type="submit"], input[type="button"],button{
 }
 div.search input.inputbox[type="text"] {width: 90%;}
 
-.moduletable input.inputbox[type="text"],.moduletable input.inputbox[type="password"] {width: 90%;margin: 0;}
+.moduletable input.inputbox[type="text"],.moduletable input.inputbox[type="password"] , .module input.inputbox[type="text"], .module input.inputbox[type="password"] {width: 90%;margin: 0;}
 fieldset p {margin: 5px 0px;}
 
 /* @end */
@@ -702,8 +702,8 @@ p.buttonheading {float: right;}
 .modifydate, .createdby, .createdate {display:block;}
 .createdby {font-weight:bold;}
 
-.sidebar .moduletable,.sidebar .moduletable_menu {margin: 0px 0px 10px 0px;}
-.sidebar .moduletable h3,.sidebar .moduletable_menu h3 {margin: 0 0px 4px 0px;padding: 0 0 4px 0;}
+.sidebar .moduletable,.sidebar .moduletable_menu , .sidebar .module, .sidebar .module_menu  {margin: 0px 0px 10px 0px;}
+.sidebar .moduletable h3, .sidebar .module h3, .sidebar .moduletable_menu h3 , .sidebar .module_menu h3 {margin: 0 0px 4px 0px;padding: 0 0 4px 0;}
 div.moduletable ul li ul li {margin: 0px;padding: 2px 5px;}
 
 /* Latest News and Popular Modules */
@@ -1436,7 +1436,7 @@ overflow:hidden;
 
 }
 #wrap .container_24,body.landing #wrap .container_24 { width: 1008px; height: 100%;}
-.sidebar .moduletable h3,.sidebar .moduletable_menu h3 {
+.sidebar .moduletable h3,.sidebar .moduletable_menu h3 , .sidebar .module h3,.sidebar .module_menu h3  {
 	border-bottom: 3px solid #d8d8d8;
 	padding: 0 0 4px 0;
 	margin: 0 0 8px 0;

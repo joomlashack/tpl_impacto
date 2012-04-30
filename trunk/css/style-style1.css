@@ -89,7 +89,7 @@ body.landing #wrap,body.landing #wrap .container_24 {
 
 /* Left and Right Module Headings */
 
-.sidebar .moduletable h3,.sidebar .moduletable_menu h3 {
+.sidebar .moduletable h3,.sidebar .moduletable_menu h3 , .sidebar .module h3,.sidebar .module_menu h3 {
 	border-bottom: 3px solid #d8d8d8;
 	padding: 0 0 4px 0;
 	margin: 0 0 8px 0;

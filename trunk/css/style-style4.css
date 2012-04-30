@@ -94,7 +94,7 @@ body.landing #teaser {
 
 /* Left and Right Module Headings */
 
-.sidebar .moduletable h3,.sidebar .moduletable_menu h3 {
+.sidebar .moduletable h3,.sidebar .moduletable_menu h3, .sidebar .module h3,.sidebar .module_menu h3  {
 	border-bottom: 3px solid #c9c9c9;
 	padding: 0 0 5px 0;
 	font-weight: normal;
