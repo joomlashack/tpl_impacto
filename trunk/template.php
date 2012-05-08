@@ -34,6 +34,7 @@ class WrightTemplate extends WrightTemplateBase {
 	  .addClass('current')
 	  .end()
 	  .superfish({
+	  	delay: <?php echo $this->params->get('menuhidedelay',400); ?>,
 	});
 	// rounded images
 

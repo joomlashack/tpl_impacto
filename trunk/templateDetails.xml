@@ -67,6 +67,7 @@
     </param>
 
     <!-- End of default Wright params -->
+	<param name="menuhidedelay" type="text" default="400" label="Delay (ms) for hiding the menus" description="Enter the time for the delay when hiding the menus (in ms)" />
   </params>
   <config>
     <fields name="params" addfieldpath="/templates/js_impacto/wright/parameters/joomla_1.6">
@@ -90,6 +91,7 @@
           <option value="xhtml1strict">XHTML 1 Strict</option>
         </field>
         <!-- End of default Wright params -->
+		<field name="menuhidedelay" type="text" default="400" label="Delay (ms) for hiding the menus" description="Enter the time for the delay when hiding the menus (in ms)" />
       </fieldset>
     </fields>
   </config>
