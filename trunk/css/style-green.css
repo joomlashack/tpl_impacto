@@ -16,10 +16,9 @@
 /* Navigation
 ------------------------------------- */
 
-
 body {
 	/* Background Color */
-	background: #fff url(../images/style3/header_bg.png) repeat-x;
+	background: #fff url(../images/green/header_bg.png) repeat-x;
 	/* Text Color */
 	color: #3a3936;
 	/* Font Style */
@@ -33,14 +32,14 @@ body {
 
 #header {
 	width: 100%;
-	background-image: url(../images/style3/header_bg.png);
+	background-image: url(../images/green/header_bg.png);
 }
 
 
 
 /* Header Logo - Set size in template parameters! */
 #header span#graphic a,#header h1#graphic a {
-	background-image: url(../images/style3/logo.png);
+	background-image: url(../images/green/logo.png);
 }
 
 /* Text Logo */
@@ -59,7 +58,7 @@ body {
 /* Text Slogan */
 #header span#text-slogan,#header h2#text-slogan {
 	font-size: 18px;
-	color: #4b4b4b;
+	color: #3d97f7;
 	text-shadow: #000 0 1px 1px;
 }
 
@@ -67,14 +66,14 @@ body {
 
 /* @group Leader */
 #wrap,#wrap .container_24 {
-	background: #fff url(../images/style3/teaser_bg_sm.png) repeat-x center top;
+	background: #fff url(../images/green/teaser_bg_sm.png) repeat-x center top;
 }
 body.landing #wrap,body.landing #wrap .container_24 {
-	background: #fff url(../images/style3/teaser_bg.png) repeat-x center top;
+	background: #fff url(../images/green/teaser_bg.png) repeat-x center top;
 }
 
 /*body.landing #teaser {
-	background: url(../images/style3/teaser_highlight.png) no-repeat center top;
+	background: url(../images/green/teaser_highlight.png) no-repeat center top;
 	padding-top: 10px;
 	position: relative;
 	top: -10px;
@@ -83,6 +82,7 @@ body.landing #wrap,body.landing #wrap .container_24 {
 
 
 /* @end */
+
 
 
 
@@ -104,7 +104,7 @@ body.landing #wrap,body.landing #wrap .container_24 {
 
 
 #footer,#footer .container_24 {
-	background: #2E2F2D url(../images/style3/footer_bg.png) repeat-x center top;
+	background: #2E2F2D url(../images/green/footer_bg.png) repeat-x center top;
 	color: #a6a6a6;
 	text-shadow: #000 1px 1px 0px;
 }
@@ -113,7 +113,7 @@ body.landing #wrap,body.landing #wrap .container_24 {
 /* Footer Module Headings */
 
 #footer h3 {
-	color: #8eaac6;
+	color: #85b519;
 	font-size: 18px;
 	text-shadow: #000 1px -1px 1px;
 	margin: 0px;
@@ -144,17 +144,18 @@ a:hover {
 	color: #0f88ff;
 }
 #topnav a {
-	color: #528bbd;
+	color: #479fff;
 }
 
 
 /* Headings */
 
+
 /* Breadcrumbs */
 
 
 #breadcrumbs .sep {
-	background-image: url(../images/style3/bread_sep.png);
+	background-image: url(../images/green/bread_sep.png);
 }
 
 /* Read More links */
@@ -164,9 +165,9 @@ a:hover {
 /* Side Navigation */
 
 .sidebar ul.menu li a,.sidebar ul.menu_menu li a {
-	border-top: 1px solid #fff;
+   /*	border-top: 1px solid #fff;
 	border-bottom: 1px solid #e2e2e2;
-	color: #000;
+	color: #000;*/
 }
 .sidebar ul.menu li a:hover,
 .sidebar ul.menu_menu li a:hover {
@@ -182,32 +183,32 @@ a:hover {
 
 
 
-
 /* Forms */
 
 input[type="submit"], input[type="button"],button{
-	background-color: #528bbd;
-	border: 4px solid #1653ac;
+	background-color: #669900;
+	border: 4px solid #9ABB56;
 	color: #fff;
 	border-radius:4px;
 	-webkit-border-radius:4px;
 	-moz-border-radius:4px;
 }
-input[type="submit"]:hover, input[type="button"]:hover{border-color: #528bbd;}
+input[type="submit"]:hover, input[type="button"]:hover{border-color: #669900;}
 
 /* @end */
 
 /* @group Landing Pages */
 
 /*#teaser {
-	background: url(../images/style3/teaser_highlight.png) no-repeat center top;
+	background: url(../images/green/teaser_highlight.png) no-repeat center top;
 }*/
 
 
 
 h2.subheading span {
-	color: #468fcf;
+	color: #0d70d2;
 }
+
 
 
 /* Button */
@@ -217,7 +218,7 @@ div.bigbutton {
 }
 
 div.bigbutton a {
-    background: transparent url('../images/style3/btn_right.png') no-repeat scroll top right;
+    background: transparent url('../images/green/btn_right.png') no-repeat scroll top right;
     display: block;
     font: normal 12px arial, sans-serif;
     height: 66px;
@@ -229,14 +230,18 @@ div.bigbutton a {
 }
 
 div.bigbutton a span.title {
-    background: transparent url(../images/style3/btn_left.png) no-repeat;
+    background: transparent url(../images/green/btn_left.png) no-repeat;
     display: block;
     padding: 0px 0px 0px 34px;
     height: 66px;
     font-size: 20px;
     line-height: 46px;
     font-weight: bolder;
-}
+} 
+
+
+
+
 /* @end */
 
 
@@ -247,35 +252,31 @@ div.bigbutton a span.title {
 
 
 #nav,#nav .innerwrap {
-	background: url(../images/style3/nav_bg.png) repeat-x;
+	background: url(../images/green/nav_bg.png) repeat-x;
 	font: bold 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 #nav ul li a {
-	color: #fff;
-	text-shadow: #0e62b5 1px -1px 1px;
-	padding: 0px 14px;
+	color: #fff;text-shadow: #5e8300 1px -1px 1px;padding: 0px 14px;
 }
 
 
 #nav ul li a:hover,
 #nav ul li:hover > a {
-	color: #79befa;
-	text-shadow: #081331 0 -1px 1px;
-	background: url(../images/style3/nav_hover.png) repeat-x;
+	color: #96cb24;
+	text-shadow: #1a2406 0 -1px 1px;
+	background: url(../images/green/nav_hover.png) repeat-x;
 }
 
-#nav ul li.current a,
-#nav ul li.current a:hover,
-#nav ul li#current a,
-#nav ul li#current a:hover {
+
+
+
+#nav .menu li li a,
+#nav .menu li li a:visited  { /* visited pseudo selector so IE6 applies text colour*/
 	color: #fff;
-	text-shadow: #0564c0 1px 1px 1px;
-	background: url(../images/style3/nav_active.png) repeat-x;
+	border-bottom: 1px solid #363636;
+	text-shadow: #000 1px 1px 0;
 }
-
-
-
 
 #nav .menu li li li,
 #nav .menu li li:hover,
@@ -283,18 +284,44 @@ div.bigbutton a span.title {
 #nav .menu li li a:focus,
 #nav .menu li li a:hover,
 #nav .menu li li a:active {
-	background: #1872c9;
+	background: #8ebf24;
 	color: #fff;
 	text-shadow: none;
 }
 
 #nav .menu li:hover ul,
 #nav .menu li.sfHover ul {
-	background: url(../images/style3/menu_footer.png) no-repeat center bottom;
+	background: url(../images/green/menu_footer.png) no-repeat center bottom;
 }
 
 #nav .menu li li {
-	background: url(../images/style3/menu_bg_trans.png) repeat;
+	background: url(../images/green/menu_bg_trans.png) repeat;
 }
 
+span.sf-sub-indicator {
+	text-indent: 0em;
+	display: inline;
+	width: 0px;
+	height: 0px;
+	float:none;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
 /* @end */
+
+
+
+#nav ul li.current,
+#nav ul li#current {
+	background: url(../images/green/nav_active.png) repeat-x;
+}
+
+#nav ul li.current a,
+#nav ul li.current a:hover,
+#nav ul li#current a,
+#nav ul li#current a:hover {
+	color: #fff;
+	text-shadow: #77a000 1px 1px 1px;
+}
+

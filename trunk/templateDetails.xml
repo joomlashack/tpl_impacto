@@ -49,7 +49,7 @@
     <!-- Start of default Wright params -->
     <param name="helper" type="help" label="Need Help?" />
     <param name="rebrand" type="rebrand" default="no" label="Remove Branding" description="This setting removes the branding from the footer of the template." />
-    <param name="style" type="styles" default="style1" label="Style" description="Select which of the style variations you wish to use." />
+    <param name="style" type="styles" default="orange" label="Style" description="Select which of the style variations you wish to use." />
     <param name="mootools" type="radio" default="1" label="Enable Mootools" description="Turn off Joomla core Mootools.js">
       <option value="0">NO</option>
       <option value="1">YES</option>
@@ -75,7 +75,7 @@
         <!-- Start of default Wright params -->
         <field name="helper" type="help" label="Need Help?" />
         <field name="rebrand" type="rebrand" default="no" label="Remove Branding" description="This setting removes the branding from the footer of the template." />
-        <field name="style" type="styles" default="style1" label="Style" description="Select which of the style variations you wish to use." />
+        <field name="style" type="styles" default="orange" label="Style" description="Select which of the style variations you wish to use." />
         <field name="mootools" type="radio" default="1" label="Enable Mootools" description="Turn off Joomla core Mootools.js">
           <option value="0">JNO</option>
           <option value="1">JYES</option>
