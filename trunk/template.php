@@ -49,15 +49,6 @@ class WrightTemplate extends WrightTemplateBase {
 </script>
 
 <w:head />
-<!--[if IE 6]>
-<link href="<?php echo $this->baseurl;?>/templates/<?php echo $this->template;?>/css/ie.css" rel="stylesheet" type="text/css" media="screen" />
-<![endif]-->
-<!--[if IE 7]>
-<link href="<?php echo $this->baseurl;?>/templates/<?php echo $this->template;?>/css/ie7.css" rel="stylesheet" type="text/css" media="screen" />
-<![endif]-->
-<!--[if IE 8]>
-<link href="<?php echo $this->baseurl;?>/templates/<?php echo $this->template;?>/css/ie8.css" rel="stylesheet" type="text/css" media="screen" />
-<![endif]-->
 </head>
 <body <?php if ($this->countModules( 'bodyclass' )) : ?> class="<jdoc:include type="modules" name="bodyclass" style="raw" />"<?php endif; ?>>
 <div id="pagewrap">
