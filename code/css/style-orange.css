@@ -1,326 +1,203 @@
+@charset "utf-8"; 
+body.home{
+	background: #9db4ba; /* Old browsers */
+	background: -moz-linear-gradient(top,  #9db4ba 1%, #ffffff 33%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#9db4ba), color-stop(33%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #9db4ba 1%,#ffffff 33%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #9db4ba 1%,#ffffff 33%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #9db4ba 1%,#ffffff 33%); /* IE10+ */
+	background: linear-gradient(to bottom,  #9db4ba 1%,#ffffff 33%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9db4ba', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+  
+}
 
-/*--------- TABLE OF CONTENTS---------*/
+.navbar-inner {
+	box-shadow: none;
+}
 
-/* General Background, Text and Links
-------------------------------------- */
-/* Header Colors and Size
-------------------------------------- */
-/* Leader Module
-------------------------------------- */
-/* Sidebar Modules
-------------------------------------- */
-/* Base Typography
-------------------------------------- */
-/* Base Landing Pages
-------------------------------------- */
-/* Navigation
-------------------------------------- */
-
-body {
-	/* Background Color */
-	background: #fff url(../images/orange/header_bg.png) repeat-x;
-	/* Text Color */
-	color: #3a3936;
-	/* Font Style */
-	font-family: Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+.wrapper-menu,
+.wrapper-bottom-menu{
+	min-height:40px;
+	padding-left:20px;
+	padding-right:20px;
+	background-color:#f5560b;
+	background-image:-moz-linear-gradient(top, #fe5c11, #e84d03);
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#fe5c11), to(#e84d03));
+	background-image:-webkit-linear-gradient(top, #fe5c11, #e84d03);
+	background-image:-o-linear-gradient(top, #fe5c11, #e84d03);
+	background-image:linear-gradient(to bottom, #fe5c11, #e84d03);
+	background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe5c11', endColorstr='#e84d03', GradientType=0);
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.065);
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.065);box-shadow:0 1px 4px rgba(0, 0, 0, 0.065);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
 
 
-
-
-/* @group Header */
-
-#header {
-	width: 100%;
-	background-image: url(../images/orange/header_bg.png);
+.navbar-inverse .brand, 
+.navbar-inverse .nav > li > a,
+.navbar .nav > li > a{
+	color:white;
+	font-weight: bold;
+	text-shadow: 1px -1px 1px #B13B02;
 }
 
-/* Header Logo - Set size in template parameters! */
-#header span#graphic a,#header h1#graphic a {
-	background-image: url(../images/orange/logo.png);
+#toolbar .navbar-inverse .brand, 
+#toolbar .navbar-inverse .nav > li > a,
+#toolbar  .navbar .nav > li > a {
+	text-shadow: 1px -1px 1px #666666;
 }
 
-/* Text Logo */
-#header span#text-header a,#header h1#text-header a {
-	font-size: 40px;
-	line-height: 100%;
-	color: #fe5d13;
-	text-shadow: #000 1px 1px 1px;
+.navbar .nav li.dropdown > .dropdown-toggle .caret{
+	border-bottom-color: #fff;
+    border-top-color: #fff;
 }
 
-/* Text Logo Hover */
-#header span#text-header a:hover,#header h1#text-header a:hover {
-	color: #fff;
+/******** li  hover *******************/
+
+.dropdown-menu li > span:hover,
+.dropdown-menu .active > span {
+	background-image: none;
+	background-color: #FF6D28;
 }
 
-/* Text Slogan */
-#header span#text-slogan,#header h2#text-slogan {
-	font-size: 18px;
-	color: #ffc54c;
-	text-shadow: #000 0 1px 1px;
+.navbar .nav > li:hover > a {
+   background-color: #2F4145;
+  background-image: -moz-linear-gradient(top, #2F4145, #20282A);
+  background-image: -ms-linear-gradient(top, #2F4145, #20282A);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2F4145), to(#20282A));
+  background-image: -webkit-linear-gradient(top, #2F4145, #20282A);
+  background-image: -o-linear-gradient(top, #2F4145, #20282A);
+  background-image: linear-gradient(top, #2F4145, #20282A);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F4145', endColorstr='#20282A', GradientType=0);
+    color: #FE5C11;
+ 	text-shadow: 0 -1px 1px #000000;
+ 	
+}
+.navbar .nav li.dropdown:hover > .dropdown-toggle .caret{
+	border-bottom-color: #FE5C11;
+    border-top-color: #FE5C11;
 }
 
-/* @end */
-
-/* @group Leader */
-#wrap,#wrap .container_24 {
-	background: #fff url(../images/orange/teaser_bg_sm.png) repeat-x center top;
-}
-body.landing #wrap,body.landing #wrap .container_24 {
-	background: #fff url(../images/orange/teaser_bg.png) repeat-x center top;
-}
-
-/*body.landing #teaser {
-	background: url(../images/orange/teaser_highlight.png) no-repeat center top;
-	padding-top: 10px;
-	position: relative;
-	top: -10px;
-}*/
-
-
-
-/* @end */
-
-
-/* @group Modules */
-
-/* Leader 1,2,3 Module Headings */
-
-
-/* Left and Right Module Headings */
-
-.sidebar .moduletable h3,.sidebar .moduletable_menu h3 , .sidebar .module h3,.sidebar .module_menu h3 {
-	border-bottom: 3px solid #d8d8d8;
-	padding: 0 0 4px 0;
-	margin: 0 0 8px 0;
-	font-weight: normal;
-	font-style: normal;
+.nav-collapse .dropdown-menu a:hover,
+.navbar-inverse .nav-collapse .dropdown-menu a:hover {
+	background-color: #DA6707;
 }
 
 
-#footer,#footer .container_24 {
-	background: #2E2F2D url(../images/orange/footer_bg.png) repeat-x center top;
-	color: #a6a6a6;
-	text-shadow: #000 1px 1px 0px;
+/******** Parent active *******************/
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle{
+	color: #7F2800;
+	text-shadow:1px 1px 1px #FEA356;
+	background-color: #F57108;
+  background-image: -moz-linear-gradient(top, #FF9332, #F57108);
+  background-image: -ms-linear-gradient(top, #FF9332, #F57108);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF9332), to(#F57108));
+  background-image: -webkit-linear-gradient(top, #FF9332, #F57108);
+  background-image: -o-linear-gradient(top, #FF9332, #F57108);
+  background-image: linear-gradient(top, #FF9332, #F57108);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9332', endColorstr='#F57108', GradientType=0);
+  *background-color: #F57108;
+}
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus{
+	color: #7F2800;
+	text-shadow:1px 1px 1px #FEA356;
+	background-color: #F57108;
+  background-image: -moz-linear-gradient(top, #FF9332, #F57108);
+  background-image: -ms-linear-gradient(top, #FF9332, #F57108);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF9332), to(#F57108));
+  background-image: -webkit-linear-gradient(top, #FF9332, #F57108);
+  background-image: -o-linear-gradient(top, #FF9332, #F57108);
+  background-image: linear-gradient(top, #FF9332, #F57108);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9332', endColorstr='#F57108', GradientType=0);
+  *background-color: #F57108;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret, .navbar .nav li.dropdown.active > .dropdown-toggle .caret, .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret{
+	border-bottom-color: #7F2800;
+    border-top-color: #7F2800;
 }
 
+/***************** Sub  Menu **************************************/
 
 
-/* Footer Module Headings */
+.dropdown-menu a{
+	color: white;
+}
+.dropdown-menu li > a:hover, 
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a{
+	background-color: #FF6D28;
+	background-image: none;
+}
+
+/*********************************************/
+
+
+/*********************************************/
 
 #footer h3 {
-	color: #e94e04;
-	font-size: 18px;
-	text-shadow: #000 1px -1px 1px;
-	margin: 0px;
-	letter-spacing: normal;
-	line-height: 69px;
-	padding-bottom: 10px;
+    color: #E94E04;
+    height: 60px;
+    letter-spacing: normal;
+    line-height: 51px;
+    text-shadow: 1px -1px 1px #000000;
+}
+/*********************************************/
+
+
+@media (max-width: 767px) {
+		.wrapper-menu,
+		.wrapper-bottom-menu  {
+		background-image: url("../images/orange/bg-menu-movil.jpg");
+		background-repeat: repeat-x;
+		background-color: black;
+	}
+	.navbar .nav > li > a{
+		text-shadow: 0 0 ;
+	}
+	.navbar-inner{
+		background-color: transparent;
+		background-image: none;
+	}
+}
+/************ Input & textarea color  ****************************************************************/
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+input[type="number"]:focus, input[type="email"]:focus, 
+input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus,
+input[type="color"]:focus, .uneditable-input:focus,
+input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, select:focus:required:invalid:focus{
+  	border-color: #F68A2B;
+  	box-shadow:0 1px 1px #F3BB8D inset, 0 0 8px #F3BB8D;
 }
 
-/* Copyright Text */
 
-
-
-
-/* @end */
-
-
-
-
-/* @group Typography */
-
-/* Links */
-
-a {
-	color: #e46c07;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-	color: #ff5e0f;
-}
-#topnav a {
-	color: #7d878a;
-}
-
-
-/* Headings */
-
-
-/* Breadcrumbs */
-
-
-#breadcrumbs .sep {
-	background-image: url(../images/orange/bread_sep.png);
-}
-
-/* Read More links */
-
-
-
-/* Side Navigation */
-
-
-.sidebar ul.menu li a,.sidebar ul.menu_menu li a {
-  /*	border-top: 1px solid #fff;
-	border-bottom: 1px solid #e2e2e2;
-	color: #000;*/
-}
-.sidebar ul.menu li a:hover,
-.sidebar ul.menu_menu li a:hover {
-	color: #e46c07;
-	text-decoration: underline;
-}
-
-.sidebar ul.menu li.current a,
-.sidebar ul.menu_menu li.current a {
-	border-bottom: 0px solid #fff;
-	color: #e46c07;
+/************ read more  ****************************************************************/
+p.readmore .btn{
+	color: #E46C07;
 }
 
 
 
 
-
-/* Forms */
-
-input[type="submit"], input[type="button"],button{
-	background-color: #669900;
-	border: 4px solid #9ABB56;
-	color: #fff;
-	border-radius:4px;
-	-webkit-border-radius:4px;
-	-moz-border-radius:4px;
-}
-input[type="submit"]:hover, input[type="button"]:hover{border-color: #669900;}
-
-/* @end */
-
-/* @group Landing Pages */
-
-/*#teaser {
-	background: url(../images/orange/teaser_highlight.png) no-repeat center top;
-}*/
-
-
-
-h2.subheading span {
-	color: #eb4406;
+.nav-tabs {
+	border-bottom-color: #E46C07;
 }
 
-
-
-/* Button */
-
-div.bigbutton {
-	color: red;
-    float: right;
+.nav-tabs .tabs a {
+    border-color: #E46C07;
+	background-color: #E46C07;
+	color: #FFFFFF;
+	font-size: 0.8em;
+	border-bottom: 4px solid #E46C07;
 }
 
-div.bigbutton a {
-    background: transparent url('../images/orange/btn_right.png') no-repeat scroll top right;
-    display: block;
-    font: normal 12px arial, sans-serif;
-    height: 66px;
-    margin: 0 10px 0px 3px;
-    padding: 0px 34px 0px 3px;
-    text-decoration: none;
-    text-align: center;
-    text-shadow: #000 0px -2px 0px;
+.nav-tabs > .open a {
+	background-color: #FFFFFF;
+	color: #E46C07;
+	border-bottom: 5px solid #fff;
 }
-
-div.bigbutton a span.title {
-    background: transparent url(../images/orange/btn_left.png) no-repeat;
-    display: block;
-    padding: 0px 0px 0px 34px;
-    height: 66px;
-    font-size: 20px;
-    line-height: 46px;
-    font-weight: bolder;
-} 
-
-
-
-/* @end */
-
-
-
-
-
-/* @group Navbar */
-
-
-#nav,#nav .innerwrap {
-	background: url(../images/orange/nav_bg.png) repeat-x;
-	font: bold 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
-#nav ul li a {
-	color: #fff;text-shadow: #b13b02 1px -1px 1px;padding: 0px 14px;
-}
-
-
-#nav ul li a:hover,
-#nav ul li:hover > a {
-	color: #fe5c11;
-	text-shadow: #000 0px -1px 1px;
-	background: url(../images/orange/nav_hover.png) repeat-x;
-}
-
-
-
-
-#nav .menu li li li,
-#nav .menu li li:hover,
-#nav .menu li li.sfHover,
-#nav .menu li li a:focus,
-#nav .menu li li a:hover,
-#nav .menu li li a:active {
-	background: #ff6d28;
-	color: #fff;
-	text-shadow: none;
-}
-
-#nav .menu li:hover ul,
-#nav .menu li.sfHover ul {
-	background: url(../images/orange/menu_footer.png) no-repeat center bottom;
-}
-
-#nav .menu li li {
-	background: url(../images/orange/menu_bg_trans.png) repeat;
-}
-
-span.sf-sub-indicator {
-	text-indent: 0em;
-	display: inline;
-	width: 0px;
-	height: 0px;
-	float:none;
-	position: relative;
-	top: 0px;
-	left: 0px;
-}
-
-/* @end */
-
-h2
-{
-    font-size: 1.8em;
-    letter-spacing: -1px;
-    margin-bottom: 0.25em;
-}
-
-#nav ul li.current,
-#nav ul li#current {
-	background: url(../images/orange/nav_active.png) repeat-x;
-}
-
-#nav ul li.current a,
-#nav ul li.current a:hover,
-#nav ul li#current a,
-#nav ul li#current a:hover {
-	color: #7f2800;
-	text-shadow: #fea356 1px 1px 1px;
-}
-

@@ -9,13 +9,3 @@
  
 // Restrict Access to within Joomla
 defined('_JEXEC') or die('Restricted access');
-
-$load = false;
-$styles = '';
-
-// Adds custom styles to head
-if(JRequest::getVar('task') == 'edit' || JRequest::getVar('layout') == 'form'){
-	$styles .= '#main{width:940px; background:none;} #content{width:100%;} #sidebar1{display:none;} #sidebar2{display:none;}'.PHP_EOL;
-	$load = true;
-}
-if ($load) $this->document->addStyleDeclaration($styles);
