@@ -28,7 +28,6 @@ if ($this->countModules('toolbar')) {
 	<html>
 		<head>
 			<w:head />
-			<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/js_impacto/js/footer.js"></script>
 		</head>
 		<body<?php if ($bodyclass != "") :?> class="<?php echo $bodyclass?>"<?php endif;?>>
 				<?php if ($this->countModules('toolbar')) :
@@ -128,23 +127,25 @@ if ($this->countModules('toolbar')) {
 						<?php endif;?>
 
 			<!-- footer -->
-			<footer id="footer" >
-				<div class="<?php echo $containerClass ?>">
-					<?php if ($this->countModules('grid-bottom2')) :
-					?>
-					<!-- grid-bottom2 -->
-					<div id="grid-bottom2" >
-						<w:module type="<?php echo $gridMode;?>" name="grid-bottom2" chrome="wrightflexgrid" />
+			<div class="wrapper-footer">
+			    <footer id="footer" <?php if ($this->params->get('stickyFooter',1)) : ?> class="sticky"<?php endif;?>>
+					<div class="<?php echo $containerClass ?>">
+						<?php if ($this->countModules('grid-bottom2')) :
+						?>
+						<!-- grid-bottom2 -->
+						<div id="grid-bottom2" >
+							<w:module type="<?php echo $gridMode;?>" name="grid-bottom2" chrome="wrightflexgrid" />
+						</div>
+						<?php endif;?>
+	
+						<?php if ($this->countModules('footer')) :
+						?>
+	
+						<w:module type="<?php echo $gridMode;?>" name="footer" chrome="none" />
+						<?php endif;?>
+						<w:footer />
 					</div>
-					<?php endif;?>
-
-					<?php if ($this->countModules('footer')) :
-					?>
-
-					<w:module type="<?php echo $gridMode;?>" name="footer" chrome="wrightflexgrid" />
-					<?php endif;?>
-					<w:footer />
-				</div>
-			</footer>
+				</footer>
+			</div>
 		</body>
 	</html>

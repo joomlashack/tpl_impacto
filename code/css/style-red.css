@@ -47,7 +47,7 @@ body.home{
 #toolbar .navbar-inverse .brand, 
 #toolbar .navbar-inverse .nav > li > a,
 #toolbar  .navbar .nav > li > a {
-	text-shadow: 1px -1px 1px #666666;
+	text-shadow: 0px -1px 1px #666666;
 }
 
 /******** li  hover *******************/
@@ -128,7 +128,7 @@ body.home{
 /*********************************************/
 
 
-@media (max-width: 767px) {
+@media (max-width: 969px) {
 		.wrapper-menu,
 			.wrapper-bottom-menu  {
 		background-image: url("../images/red/bg-menu-movil.jpg");
