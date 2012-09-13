@@ -27,7 +27,9 @@ if ($this->countModules('toolbar')) {
 <doctype>
 	<html>
 		<head>
-			<w:head />
+			<w:head />			
+			<script type="text/javascript" src="<?php echo $this->baseurl;?>/templates/js_impacto/js/jquery.innerfade.js"></script>
+			<script type="text/javascript" src="<?php echo $this->baseurl;?>/templates/js_impacto/js/impacto.js"></script>
 		</head>
 		<body<?php if ($bodyclass != "") :?> class="<?php echo $bodyclass?>"<?php endif;?>>
 				<?php if ($this->countModules('toolbar')) :
@@ -56,7 +58,7 @@ if ($this->countModules('toolbar')) {
 						<?php if ($this->countModules('featured')) :
 						?>
 						<div id="featured">
-							<w:module type="<?php echo $gridMode;?>" name="featured" chrome="none" />
+							<w:module type="none" name="featured" chrome="xhtml" />
 						</div>
 						<?php endif;?>
 						<!-- grid-top -->
@@ -84,7 +86,7 @@ if ($this->countModules('toolbar')) {
 								?>
 								<!-- above-content -->
 								<div id="above-content">
-									<w:module type="none" name="above-content" chrome="none" />
+									<w:module type="none" name="above-content" chrome="xhtml" />
 								</div>
 								<?php endif;?>
 								<?php if ($this->countModules('breadcrumbs')) :
@@ -100,7 +102,7 @@ if ($this->countModules('toolbar')) {
 								?>
 								<!-- below-content -->
 								<div id="below-content">
-									<w:module type="none" name="below-content" chrome="none" />
+									<w:module type="none" name="below-content" chrome="xhtml" />
 								</div>
 								<?php endif;?>
 							</section>

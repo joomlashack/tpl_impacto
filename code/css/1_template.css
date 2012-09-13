@@ -167,11 +167,11 @@ dt label{
 dl.article-info{
 	border-bottom: 1px solid #D8D8D8;
 }
-thead{
-	background-color: #D8D8D8;
-}
-table{
+table.category {
 	background-color:#FBFBFB;
+}
+table.category thead{
+	background-color: #D8D8D8;
 }
 #sidebar1 select, #sidebar2 select{
 	min-width: 150px;
@@ -279,3 +279,37 @@ div.total {
 	}
 }
 
+/* Caption */
+
+ul.captionlist {
+    margin: 0 0 10px;
+    padding: 0;
+}
+ul.captionlist li ul {
+    margin: 0;
+    padding: 0;
+}
+#content ul.captionlist li, ul.captionlist li {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 16px;
+    list-style: none outside none;
+    padding: 2px 0;
+}
+#content ul.captionlist li li, ul.captionlist li li {
+    color: #747474;
+    font-size: 0.9em;
+    font-weight: normal;
+    padding: 0;
+}
+
+
+ul ul {
+	list-style:disc;
+}
+
+cite {
+    color: #5E5E5E;
+    float: right;
+    font: italic 1.5em Georgia,"Times New Roman",Times,serif;
+}
