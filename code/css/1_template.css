@@ -93,16 +93,19 @@ h4 {
 }
 h5 {
     color: #767676;
-    font-weight: normal;
 }
 h6{
 	color: #3A3936;
 }
+
+h2, h3,h4,h5,h6{
+    font-weight: normal;
+}
 /************ Sidebar special styles ****************************************************************/
 aside .module h3{
 	border-bottom: 3px solid #D8D8D8;
-	font-weight: normal;
 }
+
 /************ Grid-to & Grid-top2  ****************************************************************/
 #grid-top h3,
 #grid-top2 h3{
