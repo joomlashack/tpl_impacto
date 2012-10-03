@@ -77,7 +77,7 @@ if ($this->countModules('toolbar')) {
 						<?php endif;?>
 						<div id="main-content" class="row-fluid">
 							<!-- sidebar1 -->
-							<aside id="sidebar1">
+							<aside id="sidebar1"  class="clearfix">
 								<w:module name="sidebar1" chrome="xhtml" />
 							</aside>
 							<!-- main -->
@@ -85,7 +85,7 @@ if ($this->countModules('toolbar')) {
 								<?php if ($this->countModules('above-content')) :
 								?>
 								<!-- above-content -->
-								<div id="above-content">
+								<div id="above-content" class="clearfix">
 									<w:module type="none" name="above-content" chrome="xhtml" />
 								</div>
 								<?php endif;?>
@@ -101,20 +101,20 @@ if ($this->countModules('toolbar')) {
 								<?php if ($this->countModules('below-content')) :
 								?>
 								<!-- below-content -->
-								<div id="below-content">
+								<div id="below-content"  class="clearfix">
 									<w:module type="none" name="below-content" chrome="xhtml" />
 								</div>
 								<?php endif;?>
 							</section>
 							<!-- sidebar2 -->
-							<aside id="sidebar2">
+							<aside id="sidebar2"  class="clearfix">
 								<w:module name="sidebar2" chrome="xhtml" />
 							</aside>
 						</div>
 						<?php if ($this->countModules('grid-bottom')) :
 						?>
 						<!-- grid-bottom -->
-						<div id="grid-bottom" >
+						<div id="grid-bottom"  class="clearfix" >
 							<w:module type="<?php echo $gridMode;?>" name="grid-bottom" chrome="wrightflexgrid" />
 						</div>
 						<?php endif;?>
@@ -129,7 +129,7 @@ if ($this->countModules('toolbar')) {
 						<?php endif;?>
 
 			<!-- footer -->
-			<div class="wrapper-footer">
+			<div class="wrapper-footer"  class="clearfix">
 			    <footer id="footer" <?php if ($this->params->get('stickyFooter',1)) : ?> class="sticky"<?php endif;?>>
 					<div class="<?php echo $containerClass ?>">
 						<?php if ($this->countModules('grid-bottom2')) :
