@@ -118,7 +118,11 @@ aside .module h3{
 	color: #E8E8E8;
 }
 /************ List style in modules  ****************************************************************/
-.module ul.nav > li a:hover{
+#grid-bottom .module ul.nav > li a:hover,
+#grid-bottom2 .module ul.nav > li a:hover,
+#grid-top .module ul.nav > li a:hover,
+#grid-top2 .module ul.nav > li a:hover,
+#main .module ul.nav > li a:hover{
 	background-color: transparent;
 	text-decoration:none;
 }
