@@ -316,3 +316,6 @@ cite {
     float: right;
     font: italic 1.5em Georgia,"Times New Roman",Times,serif;
 }
+aside .nav.menu.nav-tabs{
+	float: none;
+}
