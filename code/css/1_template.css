@@ -331,3 +331,8 @@ aside .nav.menu.nav-tabs{
 div.js_sv{
 	margin: 10px 0;
 }
+/*shackslides*/
+div.slideTitle h2{
+margin-bottom: 0;
+padding-bottom: 0;
+}
