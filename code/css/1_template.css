@@ -349,6 +349,16 @@ padding-bottom: 0;
 #sliderNav.pagination ul{
 	box-shadow: none;
 }
+body #sliderNav ul li  a.sliderPrev{
+	background-image: url(../images/arrow-prev.png);
+	background-position: center top;
+	background-repeat: no-repeat; 
+}
+body #sliderNav ul li  a.sliderNext {
+	background-image: url(../images/arrow-next.png);
+	background-position: center top;
+	background-repeat: no-repeat; 
+}
 body .slidermanButtonsCont .sliderPrev, 
 body .slidermanButtonsCont .sliderNext{
 	margin-top: 6%;
