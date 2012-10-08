@@ -177,10 +177,6 @@ p.readmore .btn{
 #sliderNav .active a{
 	background: url("../images/blue/pagination.png") no-repeat scroll 50% 0 transparent !important;
 }
-#sliderNav a{
+body #sliderNav ul li a{
 	background: url("../images/blue/pagination.png") no-repeat scroll 50% 100% transparent !important;
-}
-#sliderNav .pagination ul > li > a,
-#sliderNav .pagination ul > li > span{
-	border:0 none;
 }

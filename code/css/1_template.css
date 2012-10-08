@@ -342,3 +342,8 @@ padding-bottom: 0;
     text-indent: -9999px;
     width: 16px !important;
 }
+#sliderNav .pagination ul > li > a,
+#sliderNav .pagination ul > li > span{
+	border:0 none;
+}
+
