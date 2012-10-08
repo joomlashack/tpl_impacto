@@ -349,3 +349,19 @@ padding-bottom: 0;
 #sliderNav.pagination ul{
 	box-shadow: none;
 }
+.slidermanButtonsCont .sliderPrev, 
+.slidermanButtonsCont .sliderNext{
+	margin-top: 6%;
+}
+#sliderNav a.sliderPrev {
+    background: url("../images/arrows.png") no-repeat scroll 0 0 transparent !important;
+}
+#sliderNav a.sliderNext {
+    background: url("../images/arrows.png") no-repeat scroll -30px 0 transparent !important;
+}
+#slider {
+    border: 5px solid red;
+    box-shadow: 0 0 8px #999999;
+    height: auto !important;
+    width: 98% !important;
+}
