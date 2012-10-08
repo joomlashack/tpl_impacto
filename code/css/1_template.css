@@ -336,3 +336,9 @@ div.slideTitle h2{
 margin-bottom: 0;
 padding-bottom: 0;
 }
+#sliderNav a {
+    height: 16px !important;
+    margin: 5px 2px !important;
+    text-indent: -9999px;
+    width: 16px !important;
+}

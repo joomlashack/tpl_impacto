@@ -174,3 +174,13 @@ p.readmore .btn{
 	color: #0D70D2;
 	border-bottom: 5px solid #fff;
 }
+#sliderNav .active a{
+	background: url("../images/blue/pagination.png") no-repeat scroll 50% 0 transparent !important;
+}
+#sliderNav a{
+	background: url("../images/blue/pagination.png") no-repeat scroll 50% 100% transparent !important;
+}
+#sliderNav .pagination ul > li > a,
+#sliderNav .pagination ul > li > span{
+	border:0 none;
+}
