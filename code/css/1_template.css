@@ -350,12 +350,12 @@ padding-bottom: 0;
 	box-shadow: none;
 }
 body #sliderNav ul li  a.sliderPrev{
-	background-image: url(../images/arrow-prev.png);
+	background-image: url(../images/arrow-prev.png) !important;
 	background-position: center top;
 	background-repeat: no-repeat; 
 }
 body #sliderNav ul li  a.sliderNext {
-	background-image: url(../images/arrow-next.png);
+	background-image: url(../images/arrow-next.png) !important;
 	background-position: center top;
 	background-repeat: no-repeat; 
 }
