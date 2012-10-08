@@ -346,4 +346,6 @@ padding-bottom: 0;
 #sliderNav.pagination ul > li > span{
 	border:0 none;
 }
-
+#sliderNav.pagination ul{
+	box-shadow: none;
+}

@@ -180,3 +180,9 @@ p.readmore .btn{
 	color: #A70000;
 	border-bottom: 5px solid #fff;
 }
+#sliderNav .active a{
+	background: url("../images/red/pagination-red.png") no-repeat scroll 50% 0 transparent !important;
+}
+body #sliderNav ul li a{
+	background: url("../images/red/pagination-red.png") no-repeat scroll 50% 100% transparent !important;
+}

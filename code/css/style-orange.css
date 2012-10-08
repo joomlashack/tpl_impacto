@@ -201,3 +201,9 @@ p.readmore .btn{
 	color: #E46C07;
 	border-bottom: 5px solid #fff;
 }
+#sliderNav .active a{
+	background: url("../images/orange/pagination.png") no-repeat scroll 50% 0 transparent !important;
+}
+body #sliderNav ul li a{
+	background: url("../images/orange/pagination.png") no-repeat scroll 50% 100% transparent !important;
+}
