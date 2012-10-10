@@ -162,7 +162,7 @@ p.readmore .btn{
 }
 
 .nav-tabs .tabs a,
-.nav-tabs > li > a   {
+#myTab.nav-tabs > li > a   {
     border-color: #0D70D2 ;
 	background-color: #0D70D2;
 	color: #FFFFFF;
@@ -173,10 +173,11 @@ p.readmore .btn{
 	color: #0D70D2;
 	border-bottom: 5px solid #fff;
 }
-.nav-tabs > .active > a, .nav-tabs > .active > a:hover{
+#myTab.nav-tabs > .active > a, 
+#myTab.nav-tabs > .active > a:hover{
 	border-color:#0D70D2 #0D70D2 transparent;
 }
-.nav-tabs > li > a:hover{
+#myTab.nav-tabs > li > a:hover{
 	border-color: #0D70D2 ;
 	background-color: #0D70D2;
 }
