@@ -192,6 +192,10 @@ p.readmore .btn{
 .nav-tabs > .open a {
 	background-color: #FFFFFF;
 	color: #E46C07;
+	border-bottom: 5px solid #fff;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover{
+	border-color:#E46C07 #E46C07 transparent;
 }
 #sliderNav .active a{
 	background: url("../images/orange/pagination.png") no-repeat scroll 50% 0 transparent !important;

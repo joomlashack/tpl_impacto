@@ -174,7 +174,7 @@ p.readmore .btn{
 	border-bottom: 5px solid #fff;
 }
 .nav-tabs > .active > a, .nav-tabs > .active > a:hover{
-	border-color:#0D70D2;
+	border-color:#0D70D2 #0D70D2 transparent;
 }
 #sliderNav .active a{
 	background: url("../images/blue/pagination.png") no-repeat scroll 50% 0 transparent !important;
