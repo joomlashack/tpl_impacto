@@ -43,12 +43,6 @@ body.home{
 	text-shadow: 1px -1px 1px #B13B02;
 }
 
-#toolbar .navbar-inverse .brand, 
-#toolbar .navbar-inverse .nav > li > a,
-#toolbar  .navbar .nav > li > a {
-	text-shadow: 0px -1px 1px #666666;
-}
-
 .navbar .nav li.dropdown > .dropdown-toggle .caret{
 	border-bottom-color: #fff;
     border-top-color: #fff;
@@ -188,17 +182,16 @@ p.readmore .btn{
 	border-bottom-color: #E46C07;
 }
 
-.nav-tabs .tabs a {
+.nav-tabs .tabs a,
+.nav-tabs > li > a {
     border-color: #E46C07;
 	background-color: #E46C07;
 	color: #FFFFFF;
-	border-bottom: 4px solid #E46C07;
 }
 
 .nav-tabs > .open a {
 	background-color: #FFFFFF;
 	color: #E46C07;
-	border-bottom: 5px solid #fff;
 }
 #sliderNav .active a{
 	background: url("../images/orange/pagination.png") no-repeat scroll 50% 0 transparent !important;

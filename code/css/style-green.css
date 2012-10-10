@@ -169,11 +169,11 @@ p.readmore .btn{
 	border-bottom-color: #5E8300;
 }
 
-.nav-tabs .tabs a {
+.nav-tabs .tabs a ,
+.nav-tabs > li > a {
     border-color: #5E8300;
 	background-color: #5E8300;
 	color: #FFFFFF;
-	border-bottom: 4px solid #5E8300;
 }
 
 .nav-tabs > .open a {

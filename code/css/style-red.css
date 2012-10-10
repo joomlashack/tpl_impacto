@@ -15,6 +15,10 @@ body.home{
 
 .navbar-inner {
 	box-shadow: none;
+	background-image: none;
+	filter: none;
+	-ms-filter:none;
+	background-color:transparent;
 }
 
 .wrapper-menu,
@@ -167,11 +171,11 @@ p.readmore .btn{
 	border-bottom-color: #A70000;
 }
 
-.nav-tabs .tabs a {
+.nav-tabs .tabs a,
+.nav-tabs > li > a  {
     border-color: #A70000;
 	background-color: #A70000;
 	color: #FFFFFF;
-	border-bottom: 4px solid #A70000;
 }
 
 .nav-tabs > .open a {
