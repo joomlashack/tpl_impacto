@@ -162,7 +162,7 @@ p.readmore .btn{
 }
 
 .nav-tabs .tabs a,
-.nav-tabs > li > a  {
+.nav-tabs > li > a   {
     border-color: #0D70D2;
 	background-color: #0D70D2;
 	color: #FFFFFF;
