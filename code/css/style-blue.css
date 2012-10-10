@@ -161,16 +161,29 @@ p.readmore .btn{
 	border-bottom-color: #0D70D2;
 }
 
-.nav-tabs .tabs a {
-    border-color: #0D70D2;
+.nav-tabs .tabs a,
+#myTab.nav-tabs > li > a   {
+    border-color: #0D70D2 ;
 	background-color: #0D70D2;
 	color: #FFFFFF;
-	font-size: 0.8em;
-	border-bottom: 4px solid #0D70D2;
 }
 
 .nav-tabs > .open a {
 	background-color: #FFFFFF;
 	color: #0D70D2;
 	border-bottom: 5px solid #fff;
+}
+#myTab.nav-tabs > .active > a, 
+#myTab.nav-tabs > .active > a:hover{
+	border-color:#0D70D2 #0D70D2 transparent;
+}
+#myTab.nav-tabs > li > a:hover{
+	border-color: #0D70D2 ;
+	background-color: #0D70D2;
+}
+#sliderNav .active a{
+	background: url("../images/blue/pagination.png") no-repeat scroll 50% 0 transparent !important;
+}
+body #sliderNav ul li a{
+	background: url("../images/blue/pagination.png") no-repeat scroll 50% 100% transparent !important;
 }
