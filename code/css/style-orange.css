@@ -187,6 +187,7 @@ p.readmore .btn{
     border-color: #E46C07;
 	background-color: #E46C07;
 	color: #FFFFFF;
+	padding: 3px 5px 1px;
 }
 
 .nav-tabs > .open a {
@@ -195,7 +196,9 @@ p.readmore .btn{
 	border-bottom: 5px solid #fff;
 }
 #myTab.nav-tabs > .active > a, #myTab.nav-tabs > .active > a:hover{
-	border-color:#E46C07 #E46C07 transparent;
+	background-color: transparent;
+    border-color: #E46C07 #E46C07 white;
+    color: #E46C07;
 }
 #myTab.nav-tabs > li > a:hover{
 	border-color: #E46C07 ;
