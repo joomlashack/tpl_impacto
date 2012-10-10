@@ -179,10 +179,13 @@ p.readmore .btn{
 .nav-tabs > .open a {
 	background-color: #FFFFFF;
 	color: #5E8300;
-	border-bottom: 5px solid #fff;
+	border-bottom: 0 none;
 }
-#myTab.nav-tabs > .active > a, #myTab.nav-tabs > .active > a:hover{
-	border-color:#5E8300 #5E8300 transparent;
+#myTab.nav-tabs > .active > a, 
+#myTab.nav-tabs > .active > a:hover{
+	background-color: transparent;
+	border-color:#5E8300 #5E8300 white;
+	color: #5E8300;
 }
 #myTab.nav-tabs > li > a:hover{
 	border-color: #5E8300 ;
