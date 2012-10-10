@@ -384,3 +384,6 @@ body #slider {
     height: auto !important;
     width: 98% !important;
 }
+.nav-tabs > li > a:hover{
+	color:#333;
+}
