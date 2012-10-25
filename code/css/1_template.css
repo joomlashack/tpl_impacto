@@ -332,9 +332,12 @@ div.js_sv{
 	margin: 10px 0;
 }
 /*shackslides*/
-div.slideTitle h2{
-margin-bottom: 0;
-padding-bottom: 0;
+body .shackSliderslider .slideTitle {
+	color: #ffffff;
+}
+body .shackSliderslider .slideTitle h2 {
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 #sliderNav a {
     height: 16px !important;
