@@ -27,7 +27,7 @@ body.home .wrapper-content{
     text-shadow: 1px 1px 0 #000000;
 }
 
-#top{
+#top, #top2 {
 	padding-top: 10px;
 }
 /************ Wrapper-Content ****************************************************************/
