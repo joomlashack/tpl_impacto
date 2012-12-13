@@ -28,8 +28,6 @@ if ($this->countModules('toolbar')) {
 	<html>
 		<head>
 			<w:head />			
-			<script type="text/javascript" src="<?php echo $this->baseurl;?>/templates/js_impacto/js/jquery.innerfade.js"></script>
-			<script type="text/javascript" src="<?php echo $this->baseurl;?>/templates/js_impacto/js/impacto.js"></script>
 		</head>
 		<body<?php if ($bodyclass != "") :?> class="<?php echo $bodyclass?>"<?php endif;?>>
 				<?php if ($this->countModules('toolbar')) :
@@ -149,5 +147,9 @@ if ($this->countModules('toolbar')) {
 					</div>
 				</footer>
 			</div>
+
+	
+			<script type="text/javascript" src="<?php echo $this->baseurl;?>/templates/js_impacto/js/jquery.innerfade.js"></script>
+			<script type="text/javascript" src="<?php echo $this->baseurl;?>/templates/js_impacto/js/impacto.js"></script>
 		</body>
 	</html>
