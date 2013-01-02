@@ -127,7 +127,7 @@ if ($this->countModules('toolbar')) {
 						<?php endif;?>
 
 			<!-- footer -->
-			<div class="wrapper-footer"  class="clearfix">
+			<div class="wrapper-footer clearfix">
 			    <footer id="footer" <?php if ($this->params->get('stickyFooter',1)) : ?> class="sticky"<?php endif;?>>
 					<div class="<?php echo $containerClass ?>">
 						<?php if ($this->countModules('grid-bottom2')) :
