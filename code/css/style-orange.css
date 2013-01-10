@@ -9,7 +9,7 @@ body.home{
 	background: linear-gradient(to bottom,  #9db4ba 1%,#ffffff 33%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9db4ba', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 	background-repeat: repeat-x;
-	background-color: #FFFFFF;
+	*background-color: #FFFFFF;
   
 }
 
@@ -159,25 +159,21 @@ p.readmore .btn{
 	color: #E46C07;
 }
 
-
-
-
 .nav-tabs {
 	border-bottom-color: #E46C07;
 }
 
 .nav-tabs .tabs a,
 #myTab.nav-tabs > li > a {
-    border-color: #E46C07;
 	background-color: #E46C07;
+    border-color: #E46C07;
 	color: #FFFFFF;
-	padding: 3px 5px 1px;
 }
 
 .nav-tabs > .open a {
 	background-color: #FFFFFF;
-	color: #E46C07;
-	border-bottom:  1px solid white;
+	border-color: #E46C07 #E46C07 transparent;
+	color: #E46C07 !important;
 }
 #myTab.nav-tabs > .active > a, 
 #myTab.nav-tabs > .active > a:hover{

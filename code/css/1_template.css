@@ -150,6 +150,10 @@ aside .module h3{
 .filters.form-actions{
 	background-color: transparent;
 }
+p.img_caption{
+	background-color: transparent;
+	color: #7C7C7C;
+}
 /************ read more  ****************************************************************/
 p.readmore{
 	float: right;
@@ -176,6 +180,7 @@ dt label{
 
 dl.article-info{
 	border-bottom: 1px solid #D8D8D8;
+	margin-bottom: 10px;
 }
 table.category {
 	background-color:#FBFBFB;
@@ -368,4 +373,20 @@ body #slider {
     box-shadow: 0 0 8px #999999;
     height: auto !important;
     width: 98% !important;
+}
+#toolbar .navbar-inverse .brand, 
+#toolbar .navbar-inverse .nav > li > a, #toolbar .navbar .nav > li > a {
+	text-shadow: 0px -1px 1px #666;
+}
+dl.nav-tabs{
+	padding-bottom: 8px;
+}
+dl.tabs.nav h3{
+	margin-top: 0;
+}
+.nav-tabs .tabs a,
+#myTab.nav-tabs > li > a {
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 8px 12px;
 }

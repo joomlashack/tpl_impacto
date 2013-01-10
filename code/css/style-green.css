@@ -146,27 +146,26 @@ p.readmore .btn{
 	color: #82AF0C;
 }
 
-
 .nav-tabs {
 	border-bottom-color: #5E8300;
 }
 
 .nav-tabs .tabs a ,
 #myTab.nav-tabs > li > a {
+    background-color: #5E8300;
     border-color: #5E8300;
-	background-color: #5E8300;
-	color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .nav-tabs > .open a {
-	background-color: #FFFFFF;
-	color: #5E8300;
-	border-bottom: 1px solid white;
+  background-color: #FFFFFF;
+	border-color: #5E8300 #5E8300 white;
+  color: #5E8300 !important;
 }
 #myTab.nav-tabs > .active > a, 
 #myTab.nav-tabs > .active > a:hover{
-	background-color: transparent;
-	border-color:#5E8300 #5E8300 white;
+  background-color: transparent;
+  border-color:#5E8300 #5E8300 white;
 	color: #5E8300;
 }
 #myTab.nav-tabs > li > a:hover{

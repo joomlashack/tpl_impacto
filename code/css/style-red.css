@@ -147,7 +147,6 @@ p.readmore .btn{
 	color: #A70000;
 }
 
-
 .nav-tabs {
 	border-bottom-color: #A70000;
 }
@@ -161,8 +160,8 @@ p.readmore .btn{
 
 .nav-tabs > .open a {
 	background-color: #FFFFFF;
-	color: #A70000;
-	border-bottom: 1px solid white;
+	border-color:#A70000 #A70000 white;
+	color: #A70000 !important;
 }
 #myTab.nav-tabs > .active > a, 
 #myTab.nav-tabs > .active > a:hover{
