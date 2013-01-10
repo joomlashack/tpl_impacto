@@ -122,9 +122,9 @@ if ($this->countModules('toolbar')) {
 				</div>
 				<?php if ($this->countModules('bottom-menu')) :
 						?>
-						<!-- bottom-menu -->
-						<w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>" name="bottom-menu" />
-						<?php endif;?>
+					<!-- bottom-menu -->
+					<w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>" name="bottom-menu" />
+				<?php endif;?>
 
 			<!-- footer -->
 			<div class="wrapper-footer clearfix">
@@ -137,11 +137,10 @@ if ($this->countModules('toolbar')) {
 							<w:module type="<?php echo $gridMode;?>" name="grid-bottom2" chrome="wrightflexgrid" />
 						</div>
 						<?php endif;?>
-	
+						<!-- Footer -->
 						<?php if ($this->countModules('footer')) :
 						?>
-	
-						<w:module type="<?php echo $gridMode;?>" name="footer" chrome="none" />
+							<w:module type="<?php echo $gridMode;?>" name="footer" chrome="xhtml" />
 						<?php endif;?>
 						<w:footer />
 					</div>

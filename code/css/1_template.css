@@ -386,7 +386,7 @@ dl.tabs.nav h3{
 }
 .nav-tabs .tabs a,
 #myTab.nav-tabs > li > a {
-	font-size: 0.8em;
+	font-size: 18px;
 	font-weight: bold;
 	padding: 8px 12px;
 }
