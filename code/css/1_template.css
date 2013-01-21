@@ -81,6 +81,10 @@ body.home .wrapper-content{
     border-radius: 0 0 6px 6px;
     box-shadow: 0 0;
 }
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a{
+	filter:none;
+	-ms-filter:none;
+}
 /************ headings ****************************************************************/
 h1{
 	color: #000;
