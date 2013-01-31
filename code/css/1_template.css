@@ -226,6 +226,7 @@ table.category thead{
 	width: 14px;
 	background-position: 0 0 !important;
 	margin-top: -4px;
+	display: inline-block;
 }
 #breadcrumbs .icon-caret-right:before{
 	content: none !important;
