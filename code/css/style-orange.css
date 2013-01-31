@@ -80,6 +80,13 @@ body.home{
 	background-color: #DA6707;
 }
 
+ul.actions.dropdown-menu {
+	background-color: transparent;
+}
+
+ul.actions.dropdown-menu li a:hover {
+	color: #FF6D2B;
+}
 
 /******** Parent active *******************/
 
