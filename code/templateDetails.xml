@@ -2,13 +2,13 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
 	<name>js_impacto</name>
-	<creationDate>January 2013</creationDate>
+	<creationDate>March 2013</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>http://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashack 2012. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
-	<version>3.0.9_beta</version>
+	<version>3.0.9</version>
     <description>TPL_JS_IMPACTO_XML_DESCRIPTION</description>
 
 	<languages folder="language">
@@ -95,7 +95,7 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
-				<field name="bootstrap_images" type="list" default="" label="TPL_JS_WRIGHT_BOOTSTRAP_IMAGES" description="TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_DESC">
+				<field name="wright_bootstrap_images" type="list" default="" label="TPL_JS_WRIGHT_BOOTSTRAP_IMAGES" description="TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_DESC">
 					<option value="">TPL_JS_WRIGHT_NONE</option>
 					<option value="img-rounded">TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_ROUNDED</option>
 					<option value="img-circle">TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_CIRCLE</option>
