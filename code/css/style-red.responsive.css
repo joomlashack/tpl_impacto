@@ -1,0 +1,10 @@
+@media (max-width: 969px) {
+	
+	.wrapper-menu,
+	.wrapper-bottom-menu  {
+		background-image: url("../images/red/bg-menu-movil.jpg");
+		background-repeat: repeat-x;
+		background-color: black;
+	}
+	
+}

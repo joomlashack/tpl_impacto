@@ -57,8 +57,8 @@ body.home{
 
 /******** li  hover *******************/
 
-.dropdown-menu li > span:hover,
-.dropdown-menu .active > span {
+.navbar .dropdown-menu li > span:hover,
+.navbar .dropdown-menu .active > span {
 	background-image: none;
 	background-color: #1872C9;
 }
@@ -86,6 +86,13 @@ body.home{
 	background-color: #1872C9;
 }
 
+ul.actions.dropdown-menu {
+	background-color: #FFFFFF;
+}
+
+ul.actions.dropdown-menu li a:hover {
+	color: #79BEFA;
+}
 
 /******** Parent active *******************/
 
@@ -108,12 +115,12 @@ body.home{
 /***************** Sub  Menu **************************************/
 
 
-.dropdown-menu a{
+.navbar .dropdown-menu a{
 	color: white;
 }
-.dropdown-menu li > a:hover, 
-.dropdown-menu li > a:focus,
-.dropdown-submenu:hover > a{
+.navbar .dropdown-menu li > a:hover, 
+.navbar .dropdown-menu li > a:focus,
+.navbar .dropdown-submenu:hover > a{
 	background-color: #1872C9;
 	background-image: none;
 }
@@ -132,26 +139,6 @@ body.home{
 }
 /*********************************************/
 
-
-@media (max-width: 969px) {
-		.wrapper-menu,
-			.wrapper-bottom-menu  {
-		background-image: url("../images/blue/bg-menu-movil.jpg");
-		background-repeat: repeat-x;
-		background-color: black;
-	}
-	.navbar .nav > li > a{
-		text-shadow: 0 0 ;
-	}
-	.navbar-inner{
-		background-color: transparent;
-		background-image: none;
-	}
-	
-	
-}
-
-
 /************ read more  ****************************************************************/
 p.readmore .btn{
 	color: #2985C2;
@@ -163,20 +150,20 @@ p.readmore .btn{
 
 .nav-tabs .tabs a,
 #myTab.nav-tabs > li > a   {
-    border-color: #0D70D2 ;
 	background-color: #0D70D2;
+    border-color: #0D70D2 ;
 	color: #FFFFFF;
 }
 
-.nav-tabs > .open a {
+.nav-tabs > .open h3 a {
 	background-color: #FFFFFF;
-	color: #0D70D2;
-	border-bottom: 1px solid white;
+	border-color: #0D70D2 #0D70D2 white;
+	color: #0D70D2 !important;
 }
 #myTab.nav-tabs > .active > a, 
 #myTab.nav-tabs > .active > a:hover{
 	background-color: transparent;
-	border-color:#0D70D2 #0D70D2 white;
+	border-color: #0D70D2 #0D70D2 white;
 	color: #0D70D2;
 }
 #myTab.nav-tabs > li > a:hover{

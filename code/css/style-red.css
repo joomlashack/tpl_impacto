@@ -56,8 +56,8 @@ body.home{
 
 /******** li  hover *******************/
 
-.dropdown-menu li > span:hover,
-.dropdown-menu .active > span {
+.navbar .dropdown-menu li > span:hover,
+.navbar .dropdown-menu .active > span {
 	background-image: none;
 	background-color: #A70000;
 }
@@ -85,6 +85,15 @@ body.home{
 	background-color: #A70000;
 }
 
+ul.actions.dropdown-menu {
+	background-color: #FFFFFF;
+}
+
+ul.actions.dropdown-menu li a:hover {
+	color: #A70000;
+}
+
+
 
 /******** Parent active *******************/
 
@@ -107,11 +116,11 @@ body.home{
 /***************** Sub  Menu **************************************/
 
 
-.dropdown-menu a{
+.navbar .dropdown-menu a{
 	color: white;
 }
-.dropdown-menu li > a:hover, 
-.dropdown-menu li > a:focus,
+.navbar .dropdown-menu li > a:hover, 
+.navbar .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a{
 	background-color: #A70000;
 	background-image: none;
@@ -131,25 +140,6 @@ body.home{
 }
 /*********************************************/
 
-
-@media (max-width: 969px) {
-		.wrapper-menu,
-			.wrapper-bottom-menu  {
-		background-image: url("../images/red/bg-menu-movil.jpg");
-		background-repeat: repeat-x;
-		background-color: black;
-	}
-	.navbar .nav > li > a{
-		text-shadow: 0 0 ;
-	}
-	.navbar-inner{
-		background-color: transparent;
-		background-image: none;
-	}
-	
-	
-}
-
 /************ Input & textarea color  ****************************************************************/
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
 input[type="number"]:focus, input[type="email"]:focus, 
@@ -166,7 +156,6 @@ p.readmore .btn{
 	color: #A70000;
 }
 
-
 .nav-tabs {
 	border-bottom-color: #A70000;
 }
@@ -178,10 +167,10 @@ p.readmore .btn{
 	color: #FFFFFF;
 }
 
-.nav-tabs > .open a {
+.nav-tabs > .open h3 a {
 	background-color: #FFFFFF;
-	color: #A70000;
-	border-bottom: 1px solid white;
+	border-color:#A70000 #A70000 white;
+	color: #A70000 !important;
 }
 #myTab.nav-tabs > .active > a, 
 #myTab.nav-tabs > .active > a:hover{

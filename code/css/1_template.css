@@ -9,18 +9,18 @@ body.home .wrapper-content{
 /************ Header ****************************************************************/
 #header{
 	margin-bottom: 0;
-  background-color: #2F4145;
-  background-image: -moz-linear-gradient(top, #2F4145, #20282A);
-  background-image: -ms-linear-gradient(top, #2F4145, #20282A);
-  background-image: -webkit-gradient(linear, center top ,center bottom, from(#2F4145), to(#20282A));
-  background-image: -webkit-linear-gradient(top, #2F4145, #20282A);
-  background-image: -o-linear-gradient(top, #2F4145, #20282A);
-  background-image: linear-gradient(top, #2F4145, #20282A);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F4145', endColorstr='#20282A', GradientType=0);
-  *background-color: #2F4145;
-  color: #7D878A;
-  text-shadow: 1px 1px 0 #000000;
+	background-color: #2F4145;
+	background-image: -moz-linear-gradient(top, #2F4145, #20282A);
+	background-image: -ms-linear-gradient(top, #2F4145, #20282A);
+	background-image: -webkit-gradient(linear, center top ,center bottom, from(#2F4145), to(#20282A));
+	background-image: -webkit-linear-gradient(top, #2F4145, #20282A);
+	background-image: -o-linear-gradient(top, #2F4145, #20282A);
+	background-image: linear-gradient(top, #2F4145, #20282A);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2F4145', endColorstr='#FF20282A', GradientType=0);
+     *background-color: #2F4145;
+     color: #7D878A;
+     text-shadow: 1px 1px 0 #000000;
 }
 #header h1,#header h2,#header h3,#header h4,#header h5,#header h6{
     color: #7D878A;
@@ -55,14 +55,14 @@ body.home .wrapper-content{
 	border: 0 none;
 }
 
-.dropdown-menu li > span:hover,
-.dropdown-menu .active > span{
+.navbar .dropdown-menu li > span:hover,
+.navbar .dropdown-menu .active > span{
 	background-image: none;
 }
-.dropdown-menu .dropdown-menu{
+.navbar .dropdown-menu .dropdown-menu{
 	border-radius:6px 6px 6px 6px ;
 }
-.dropdown-menu a, .dropdown-menu span.separator{
+.navbar .dropdown-menu a,.navbar .dropdown-menu span.separator{
 	color: #ccc;
 }
 .navbar-inverse .navbar-inner,
@@ -74,12 +74,16 @@ body.home .wrapper-content{
     border-left: 0 none;
     border-right:0 none;
 }
-.dropdown-menu{
+.navbar .dropdown-menu{
 	background-color: transparent;
 	background-image:url("../images/menu_bg_trans.png");
     border: 0 none;
     border-radius: 0 0 6px 6px;
     box-shadow: 0 0;
+}
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a{
+	filter:none;
+	-ms-filter:none;
 }
 /************ headings ****************************************************************/
 h1{
@@ -150,6 +154,10 @@ aside .module h3{
 .filters.form-actions{
 	background-color: transparent;
 }
+p.img_caption{
+	background-color: transparent;
+	color: #7C7C7C;
+}
 /************ read more  ****************************************************************/
 p.readmore{
 	float: right;
@@ -176,6 +184,7 @@ dt label{
 
 dl.article-info{
 	border-bottom: 1px solid #D8D8D8;
+	margin-bottom: 10px;
 }
 table.category {
 	background-color:#FBFBFB;
@@ -217,6 +226,7 @@ table.category thead{
 	width: 14px;
 	background-position: 0 0 !important;
 	margin-top: -4px;
+	display: inline-block;
 }
 #breadcrumbs .icon-caret-right:before{
 	content: none !important;
@@ -271,24 +281,6 @@ div.total {
 }
 .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a{
 	color: white;
-}
-
-@media (max-width: 979px) {
-	
-	body.toolbarpadding{
-		padding-top:0;
-	}
-	
-	
-}
-@media (max-width: 767px){
-	#header,
-	 .wrapper-menu,
-	 .wrapper-bottom-menu,
-	.wrapper-content{
-		margin-left: -20px;
-		margin-right: -20px;
-	}
 }
 
 /* Caption */
@@ -386,4 +378,23 @@ body #slider {
     box-shadow: 0 0 8px #999999;
     height: auto !important;
     width: 98% !important;
+}
+#toolbar .navbar-inverse .brand, 
+#toolbar .navbar-inverse .nav > li > a, #toolbar .navbar .nav > li > a {
+	text-shadow: 0px -1px 1px #666;
+}
+dl.nav-tabs{
+	padding-bottom: 8px;
+}
+dl.tabs.nav h3{
+	margin-top: 0;
+}
+.nav-tabs .tabs a,
+#myTab.nav-tabs > li > a {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 8px 12px;
+}
+ul.actions.drowpdown-menu{
+	padding: 5px 0;
 }
