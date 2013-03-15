@@ -6,7 +6,7 @@
 	.navbar .nav > li > a{
 		text-shadow: 0 0 ;
 	}
-	.navbar-inner{
+	.wrapper-menu .navbar-inner, .wrapper-bottom-menu .navbar-inner{
 		background-color: transparent;
 		background-image: none;
 	}
