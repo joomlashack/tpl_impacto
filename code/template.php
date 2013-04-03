@@ -22,6 +22,11 @@ $bodyclass = "";
 if ($this->countModules('toolbar')) {
 	$bodyclass = "toolbarpadding";
 }
+$bgGradient = $this->params->get('impacto_gradient_content','1');
+$bgGradientClass = " addGradient";
+if ($bgGradient == 0) {
+	$bgGradientClass = ""
+}
 
 ?>
 <doctype>
@@ -29,7 +34,7 @@ if ($this->countModules('toolbar')) {
 		<head>
 			<w:head />			
 		</head>
-		<body<?php if ($bodyclass != "") :?> class="<?php echo $bodyclass?>"<?php endif;?>>
+		<body<?php if ($bodyclass != "") :?> class="<?php echo $bodyclass . $bgGradientClass?>"<?php endif;?>>
 				<?php if ($this->countModules('toolbar')) :
 				?>
 				<!-- toolbar -->

@@ -8,7 +8,7 @@
 	<authorUrl>http://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashack 2012. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
-	<version>3.0.9</version>
+	<version>3.0.10_dev1</version>
     <description>TPL_JS_IMPACTO_XML_DESCRIPTION</description>
 
 	<languages folder="language">
@@ -107,6 +107,12 @@
 				</field>
                 <!-- End of default Wright params -->
 			</fieldset>
+			<fieldset name="TPL_JS_IMAGO_OPTIONS">
+                <field name="impacto_gradient_content" type="radio" default="1" label="TPL_JS_IMPACTO_GRADIENT_CONTENT" description="TPL_JS_IMPACTO_GRADIENT_CONTENT_DESC">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+            </fieldset>
 		</fields>
 	</config>
 </extension>
