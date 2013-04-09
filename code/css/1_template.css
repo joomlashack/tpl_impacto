@@ -32,11 +32,11 @@ body.home .wrapper-content{
 }
 /************ Wrapper-Content ****************************************************************/
 .wrapper-content{
-    padding: 20px 20px 0;
+	padding: 20px 20px 0;
 }
 .addGradient .wrapper-content{
 	background-image: url("../images/teaser_bg_sm.png");
-    background-repeat: repeat-x;
+	background-repeat: repeat-x;
 }
 /************ Menu  ****************************************************************/
 
