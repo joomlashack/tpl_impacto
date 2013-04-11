@@ -25,7 +25,7 @@ if ($this->countModules('toolbar')) {
 $bgGradient = $this->params->get('impacto_gradient_content','1');
 $bgGradientClass = " addGradient";
 if ($bgGradient == 0) {
-	$bgGradientClass = ""
+	$bgGradientClass = "";
 }
 
 ?>
