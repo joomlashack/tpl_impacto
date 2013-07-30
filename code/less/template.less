@@ -5,7 +5,6 @@ body.home .wrapper-content{
   background-image: none;
 }
 
-
 /************ Header ****************************************************************/
 #header{
   margin-bottom: 0;
@@ -86,6 +85,9 @@ body.home .wrapper-content{
 .dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a{
   filter:none;
   -ms-filter:none;
+}
+.menu li span.separator{
+  color: @linkColor;
 }
 /************ headings ****************************************************************/
 h1{
@@ -398,8 +400,11 @@ dl.tabs.nav h3{
   font-weight: bold;
   padding: 8px 12px;
 }
-ul.actions.drowpdown-menu{
+ul.actions.dropdown-menu{
   padding: 5px 0;
+  li a{
+    color: @linkColor;
+  }
 }
 // Docs
 /* Add additional stylesheets below
