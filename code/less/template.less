@@ -355,12 +355,12 @@ body .shackSliderslider .slideTitle h2 {
 #sliderNav.pagination ul{
   box-shadow: none;
 }
-body #sliderNav ul li  a.sliderPrev{
+body #sliderNav a.sliderPrev{
   background-image: url(../../images/arrow-prev.png) !important;
   background-position: center top;
   background-repeat: no-repeat; 
 }
-body #sliderNav ul li  a.sliderNext {
+body #sliderNav a.sliderNext {
   background-image: url(../../images/arrow-next.png) !important;
   background-position: center top;
   background-repeat: no-repeat; 
@@ -389,6 +389,13 @@ body #slider {
     box-shadow: 0 0 8px #999999;
     height: auto !important;
     width: 98% !important;
+}
+[class^="moduletable"] > .shackSliderslider,
+[class*=" moduletable"] > .shackSliderslider {
+  #slider{
+    width: auto !important;
+    display: table;
+  }
 }
 #toolbar .navbar-inverse .brand, 
 #toolbar .navbar-inverse .nav > li > a, #toolbar .navbar .nav > li > a {
