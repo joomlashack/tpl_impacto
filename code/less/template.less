@@ -4,7 +4,12 @@
 body.home .wrapper-content{
   background-image: none;
 }
-
+::selection{
+  background-color: @selectionBackgroundColor !important;
+}
+::-moz-selection{
+  background-color: @selectionBackgroundColor !important;
+}
 /************ Header ****************************************************************/
 #header{
   margin-bottom: 0;
