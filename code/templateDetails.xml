@@ -8,7 +8,7 @@
 	<authorUrl>http://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashack 2012. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
-	<version>3.0.10_beta1</version>
+	<version>3.0.10_beta2</version>
     <description>TPL_JS_IMPACTO_XML_DESCRIPTION</description>
 
 	<languages folder="language">
@@ -19,7 +19,7 @@
 		<language tag="es-ES">es-ES/es-ES.tpl_js_impacto.ini</language>
 		<language tag="es-ES">es-ES/es-ES.tpl_js_impacto.sys.ini</language>
 	</languages>
-	
+
 	<files>
 		<filename>component.php</filename>
 		<filename>favicon.ico</filename>
@@ -35,7 +35,7 @@
 		<folder>js</folder>
 		<folder>wright</folder>
 	</files>
-	
+
 	<positions>
 		<position>toolbar</position>
 		<position>logo</position>
@@ -55,7 +55,7 @@
 		<position>bottom-menu</position>
 		<position>footer</position>
 	</positions>
-	
+
 	<config>
 		<fields name="params" addfieldpath="/templates/js_impacto/wright/parameters/joomla_2.5">
 			<fieldset name="basic">
