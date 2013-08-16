@@ -17,10 +17,6 @@ if ($gridMode == 'row-fluid') {
     $containerClass = 'container-fluid';
 }
 
-$bodyclass = "";
-if ($this->countModules('toolbar')) {
-	$bodyclass = "toolbarpadding";
-}
 $bgGradient = $this->params->get('impacto_gradient_content','1');
 $bgGradientClass = " addGradient";
 if ($bgGradient == 0) {

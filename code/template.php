@@ -19,7 +19,7 @@ defined('_JEXEC') or die('Restricted access');
 		<head>
 			<w:head />
 		</head>
-		<body<?php if ($bodyclass != "") :?> class="<?php echo $bodyclass . $bgGradientClass?>"<?php endif;?>>
+		<body class="<?php if ($bodyclass != "") { echo $bodyclass; } echo $bgGradientClass;?>">
 				<?php if ($this->countModules('toolbar')) :
 				?>
 				<!-- toolbar -->
