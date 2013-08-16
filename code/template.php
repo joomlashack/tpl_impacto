@@ -17,7 +17,7 @@ defined('_JEXEC') or die('Restricted access');
 <doctype>
 	<html>
 		<head>
-			<w:head />			
+			<w:head />
 		</head>
 		<body<?php if ($bodyclass != "") :?> class="<?php echo $bodyclass . $bgGradientClass?>"<?php endif;?>>
 				<?php if ($this->countModules('toolbar')) :
@@ -38,7 +38,7 @@ defined('_JEXEC') or die('Restricted access');
 				<!-- menu -->
 				<w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>"  name="menu" />
 				<?php endif;?>
-	
+
 				<!-- header -->
 				<div class="wrapper-content">
 					<div class="<?php echo $containerClass ?>">
@@ -106,26 +106,25 @@ defined('_JEXEC') or die('Restricted access');
 							<w:module type="<?php echo $gridMode;?>" name="grid-bottom" chrome="wrightflexgrid" />
 						</div>
 						<?php endif;?>
-	
-						
+
+
 					</div>
 				</div>
-				<?php if ($this->countModules('bottom-menu')) :
-						?>
-					<!-- bottom-menu -->
-					<w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>" name="bottom-menu" />
-				<?php endif;?>
 
 			<!-- footer -->
 			<div class="wrapper-footer clearfix">
 			    <footer id="footer" <?php if ($this->params->get('stickyFooter',1)) : ?> class="sticky"<?php endif;?>>
+					<?php if ($this->countModules('bottom-menu')) : ?>
+						<!-- bottom-menu -->
+						<w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>" name="bottom-menu" />
+					<?php endif;?>
 					<div class="<?php echo $containerClass ?>">
 						<?php if ($this->countModules('grid-bottom2')) :
 						?>
-						<!-- grid-bottom2 -->
-						<div id="grid-bottom2" >
-							<w:module type="<?php echo $gridMode;?>" name="grid-bottom2" chrome="wrightflexgrid" />
-						</div>
+							<!-- grid-bottom2 -->
+							<div id="grid-bottom2" >
+								<w:module type="<?php echo $gridMode;?>" name="grid-bottom2" chrome="wrightflexgrid" />
+							</div>
 						<?php endif;?>
 						<!-- Footer -->
 						<?php if ($this->countModules('footer')) :
@@ -137,7 +136,7 @@ defined('_JEXEC') or die('Restricted access');
 				</footer>
 			</div>
 
-	
+
 			<script type="text/javascript" src="<?php echo $this->baseurl;?>/templates/js_impacto/js/jquery.innerfade.js"></script>
 			<script type="text/javascript" src="<?php echo $this->baseurl;?>/templates/js_impacto/js/impacto.js"></script>
 		</body>
