@@ -1,4 +1,5 @@
 <?php
+<?php
 /**
  * @package     Impacto
  * @subpackage  Template File
