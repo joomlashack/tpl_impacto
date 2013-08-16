@@ -118,7 +118,7 @@ defined('_JEXEC') or die('Restricted access');
 						<!-- bottom-menu -->
 						<w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>" name="bottom-menu" />
 					<?php endif;?>
-					<div class="<?php echo $containerClass ?>">
+					<div class="<?php echo $containerClass ?> footer-content">
 						<?php if ($this->countModules('grid-bottom2')) :
 						?>
 							<!-- grid-bottom2 -->

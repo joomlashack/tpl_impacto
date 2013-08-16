@@ -1,4 +1,4 @@
-@charset "utf-8"; 
+@charset "utf-8";
 body.home{
 	background: #9db4ba; /* Old browsers */
 	background: -moz-linear-gradient(top,  #9db4ba 1%, #ffffff 33%); /* FF3.6+ */
@@ -10,7 +10,7 @@ body.home{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9db4ba', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 	background-repeat: repeat-x;
 	*background-color: #FFFFFF;
-  
+
 }
 
 .navbar-inner {
@@ -34,12 +34,11 @@ body.home{
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
 
-
-.navbar-inverse .brand, 
+.navbar-inverse .brand,
 .navbar-inverse .nav > li > a,
-.navbar .nav > li > a{
-	color:white;
-	font-weight: bold;
+.navbar-inverse .nav > li > span.separator,
+.navbar .nav > li > a,
+.navbar .nav > li > span.separator{
 	text-shadow: 1px -1px 1px #B13B02;
 }
 
@@ -56,7 +55,8 @@ body.home{
 	background-color: #FF6D28;
 }
 
-.navbar .nav > li:hover > a {
+.navbar .nav > li:hover > a,
+.navbar .nav > li:hover > span.separator {
    background-color: #2F4145;
   background-image: -moz-linear-gradient(top, #2F4145, #20282A);
   background-image: -ms-linear-gradient(top, #2F4145, #20282A);
@@ -68,7 +68,7 @@ body.home{
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F4145', endColorstr='#20282A', GradientType=0);
     color: #FE5C11;
  	text-shadow: 0 -1px 1px #000000;
- 	
+
 }
 .navbar .nav li.dropdown:hover > .dropdown-toggle .caret{
 	border-bottom-color: #FE5C11;
@@ -129,7 +129,7 @@ ul.actions.dropdown-menu li a:hover {
 .navbar .dropdown-menu a{
 	color: white;
 }
-.navbar .dropdown-menu li > a:hover, 
+.navbar .dropdown-menu li > a:hover,
 .navbar .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a{
 	background-color: #FF6D28;
@@ -152,7 +152,7 @@ ul.actions.dropdown-menu li a:hover {
 
 /************ Input & textarea color  ****************************************************************/
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
-input[type="number"]:focus, input[type="email"]:focus, 
+input[type="number"]:focus, input[type="email"]:focus,
 input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus,
 input[type="color"]:focus, .uneditable-input:focus,
 input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, select:focus:required:invalid:focus{
@@ -182,7 +182,7 @@ p.readmore .btn{
 	border-color: #E46C07 #E46C07 transparent;
 	color: #E46C07 !important;
 }
-#myTab.nav-tabs > .active > a, 
+#myTab.nav-tabs > .active > a,
 #myTab.nav-tabs > .active > a:hover{
 	background-color: transparent;
     border-color: #E46C07 #E46C07 white;
