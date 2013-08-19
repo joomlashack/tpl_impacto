@@ -2,7 +2,13 @@
 // Variables
 // --------------------------------------------------
 
- @selectionBackgroundColor:#DCAFAA;
+@color_one  : @white;  // body backgroundColor
+@color_two  : #2F4145; // Header top Gradient
+@color_three: #20282A; // Header bottom Gradient
+@color_four : #ae1300; // Navbar top Gradient
+@color_five : #870d00; // Navbar bottom Gradient
+
+@selectionBackgroundColor:#DCAFAA;
 // Global values
 // --------------------------------------------------
 
@@ -32,7 +38,7 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
+@bodyBackground:        @color_one;
 @textColor:             #575757;
 
 
@@ -181,8 +187,8 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #AE1300;
-@navbarBackground:                #870D00;
+@navbarBackgroundHighlight:       @color_four;
+@navbarBackground:                @color_five;
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
 @navbarText:                      #777;

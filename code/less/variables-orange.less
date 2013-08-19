@@ -2,6 +2,12 @@
 // Variables
 // --------------------------------------------------
 
+@color_one  : @white;  // body backgroundColor
+@color_two  : #2F4145; // Header top Gradient
+@color_three: #20282A; // Header bottom Gradient
+@color_four : #fe5c11; // Navbar top Gradient
+@color_five : #e84d03; // Navbar bottom Gradient
+
 @selectionBackgroundColor:#F8C4AC;
 // Global values
 // --------------------------------------------------
@@ -32,7 +38,7 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
+@bodyBackground:        @color_one;
 @textColor:             #575757;
 
 
@@ -181,14 +187,14 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #FE5C11;
-@navbarBackground:                #E84D03;
+@navbarBackgroundHighlight:       @color_four;
+@navbarBackground:                @color_five;
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
 @navbarText:                      #777;
 @navbarLinkColor:                 @white;
-@navbarLinkColorHover:            #fe5c11;
-@navbarLinkColorActive:           #fe5c11;
+@navbarLinkColorHover:            @color_four;
+@navbarLinkColorActive:           @color_four;
 @navbarLinkBackgroundHover:       #ff6d28;
 @navbarLinkBackgroundActive:      #ff6d28;
 
@@ -203,7 +209,7 @@
 @navbarInverseLinkColor:                 @grayLight;
 @navbarInverseLinkColorHover:            @white;
 @navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
-@navbarInverseLinkBackgroundHover:       #2f4145;
+@navbarInverseLinkBackgroundHover:       @color_two;
 @navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
 
 @navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
