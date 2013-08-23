@@ -118,24 +118,29 @@ defined('_JEXEC') or die('Restricted access');
 						<!-- bottom-menu -->
 						<w:nav containerClass="<?php echo $containerClass ?>" rowClass="<?php echo $gridMode;?>" name="bottom-menu" />
 					<?php endif;?>
-					<div class="<?php echo $containerClass ?> footer-content">
-						<?php if ($this->countModules('grid-bottom2')) :
-						?>
-							<!-- grid-bottom2 -->
-							<div id="grid-bottom2" >
-								<w:module type="<?php echo $gridMode;?>" name="grid-bottom2" chrome="wrightflexgrid" />
+
+
+					<div class="footer-content">
+						<?php if ($this->countModules('grid-bottom2')) : ?>
+							<div class="grid-bottom2">
+								<div class="<?php echo $containerClass ?>">
+										<!-- grid-bottom2 -->
+										<div id="grid-bottom2" >
+											<w:module type="<?php echo $gridMode;?>" name="grid-bottom2" chrome="wrightflexgrid" />
+										</div>
+								</div>
 							</div>
 						<?php endif;?>
-						<!-- Footer -->
-						<?php if ($this->countModules('footer')) :
-						?>
-							<w:module type="<?php echo $gridMode;?>" name="footer" chrome="xhtml" />
-						<?php endif;?>
-						<w:footer />
+						<div class="<?php echo $containerClass ?>">
+							<!-- Footer -->
+							<?php if ($this->countModules('footer')) : ?>
+								<w:module type="<?php echo $gridMode;?>" name="footer" chrome="xhtml" />
+							<?php endif;?>
+							<w:footer />
+						</div>
 					</div>
 				</footer>
 			</div>
-
 
 			<script type="text/javascript" src="<?php echo $this->baseurl;?>/templates/js_impacto/js/jquery.innerfade.js"></script>
 			<script type="text/javascript" src="<?php echo $this->baseurl;?>/templates/js_impacto/js/impacto.js"></script>

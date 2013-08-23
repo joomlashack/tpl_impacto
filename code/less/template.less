@@ -271,12 +271,16 @@ div.total {
 
 #footer{
   background-color:#2E2F2D;
-  background-image: url("../../images/footer_bg.png");
-  background-repeat: repeat-x;
+  background-image: none;
+  filter:none;
   color: #A6A6A6;
   text-align: center;
   text-shadow: 1px 1px 0 #000000;
   width: 100%;
+  .grid-bottom2{
+    background-image: url("../../images/footer_bg.png");
+    background-repeat: repeat-x;
+  }
 }
 #footer .footer-content a{
   color: white;
@@ -1439,6 +1443,9 @@ div.intro {
 .wrapper-footer {
   #footer{
     overflow: visible;
+    h6,h2,h1{
+      color:#a6a6a6;
+    }
   }
   .wrapper-bottom-menu{
     margin-top: -1px;
