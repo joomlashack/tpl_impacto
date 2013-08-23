@@ -169,6 +169,7 @@ p.img_caption{
 /************ read more  ****************************************************************/
 p.readmore{
   float: right;
+  padding-bottom: 1px;
 }
 p.readmore .btn{
   font-weight: bold;
@@ -233,7 +234,12 @@ table.category thead{
 .breadcrumbs {
   margin: 0;
   padding-bottom: 0;
-  padding-top: 4px;
+  padding-top: 2px;
+}
+.breadcrumb{
+  > li{
+    margin-bottom: 0;
+  }
 }
 
 #breadcrumbs .icon-caret-right{
@@ -1424,11 +1430,6 @@ form.bs-docs-example {
   /* Unfloat the back to top in footer to prevent odd text wrapping */
   .footer .pull-right {
     float: none;
-  }
-}
-.items-more{
-  .nav-list{
-    padding: 0;
   }
 }
 div.intro {
