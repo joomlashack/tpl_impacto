@@ -8,7 +8,7 @@
 	<authorUrl>http://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashack 2012. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
-	<version>3.1.0_beta3</version>
+	<version>3.1.0_beta4</version>
     <description>TPL_JS_IMPACTO_XML_DESCRIPTION</description>
 
 	<languages folder="language">
@@ -24,6 +24,7 @@
 		<filename>component.php</filename>
 		<filename>favicon.ico</filename>
 		<filename>functions.php</filename>
+		<filename>wrighttemplate.php</filename>
 		<filename>index.php</filename>
 		<filename>template.php</filename>
 		<filename>templateDetails.xml</filename>
