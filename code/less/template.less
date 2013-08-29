@@ -59,9 +59,6 @@ body.home .wrapper-content{
 .navbar .dropdown-menu .dropdown-menu{
   border-radius:6px 6px 6px 6px ;
 }
-.navbar .dropdown-menu a,.navbar .dropdown-menu span.separator{
-  color: #ccc;
-}
 .navbar-inverse .navbar-inner,
 .navbar-inner{
   font-family:"Helvetica Neue",Helvetica,Geneva,"Lucida Sans","Lucida Grande","Lucida Sans Unicode",Verdana,Arial,sans-serif
@@ -71,6 +68,15 @@ body.home .wrapper-content{
     border-left: 0 none;
     border-right:0 none;
 }
+.navbar .nav li.dropdown .caret{
+  border-bottom-color: #fff;
+    border-top-color: #fff;
+}
+.navbar-inverse .nav li.dropdown .caret{
+  border-bottom-color: #fff;
+    border-top-color: #fff;
+}
+
 .navbar .dropdown-menu{
   background-color: transparent;
   background-image:url("../../images/menu_bg_trans.png");
@@ -82,9 +88,7 @@ body.home .wrapper-content{
   filter:none;
   -ms-filter:none;
 }
-.menu li span.separator{
-  color: @linkColor;
-}
+
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a,
 .navbar-inverse .nav > li > span.separator,
@@ -131,6 +135,14 @@ aside .module h3{
 .module ul [class*=" icon-"]:before
 {
   color: #E8E8E8;
+}
+.list-striped li:hover,
+.list-striped li:nth-child(odd), .list-striped dd:nth-child(odd), .row-striped .row:nth-child(odd), .row-striped .row-fluid:nth-child(odd){
+  [class^="icon-"]:before,
+  [class*="icon-"]:before{
+    color: @textColor;
+  }
+
 }
 /************ List style in modules  ****************************************************************/
 #grid-bottom .module ul.nav > li a:hover,
