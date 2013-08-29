@@ -68,13 +68,29 @@ body.home .wrapper-content{
     border-left: 0 none;
     border-right:0 none;
 }
-.navbar .nav li.dropdown .caret{
-  border-bottom-color: #fff;
-    border-top-color: #fff;
+.navbar .nav li.dropdown {
+  .caret{
+    border-bottom-color: @navbarLinkColor;
+    border-top-color: @navbarLinkColor;
+  }
+  &.active{
+    .caret{
+      border-bottom-color: @navbarLinkColorActive;
+      border-top-color: @navbarLinkColorActive;
+    }
+  }
 }
-.navbar-inverse .nav li.dropdown .caret{
-  border-bottom-color: #fff;
+.navbar-inverse .nav li.dropdown{
+  .caret{
+    border-bottom-color: #fff;
     border-top-color: #fff;
+  }
+  &.active{
+    .caret{
+      border-bottom-color: @white;
+      border-top-color: @white;
+    }
+  }
 }
 
 .navbar .dropdown-menu{
