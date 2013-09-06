@@ -1,0 +1,156 @@
+@charset "utf-8";
+body.home{
+	background: #9db4ba; /* Old browsers */
+	background: -moz-linear-gradient(top,  #9db4ba 1%, #ffffff 33%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#9db4ba), color-stop(33%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #9db4ba 1%,#ffffff 33%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #9db4ba 1%,#ffffff 33%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #9db4ba 1%,#ffffff 33%); /* IE10+ */
+	background: linear-gradient(to bottom,  #9db4ba 1%,#ffffff 33%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9db4ba', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	background-repeat: repeat-x;
+	*background-color: #FFFFFF;
+}
+
+.navbar-inner {
+	box-shadow: none;
+}
+
+.wrapper-menu,
+.wrapper-bottom-menu{
+	#gradient > .vertical(@color_four,@color_five);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	min-height:40px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.navbar-inverse .brand,
+.navbar-inverse .nav > li > a,
+.navbar-inverse .nav > li > span.separator,
+.navbar .nav > li > a,
+.navbar .nav > li > span.separator{
+	text-shadow: 1px -1px 1px #0E62B5;
+}
+
+#toolbar .navbar-inverse .brand,
+#toolbar .navbar-inverse .nav > li > a,
+#toolbar  .navbar .nav > li > a {
+	text-shadow: 0px -1px 1px @gray + #111;
+}
+
+.navbar .nav li.dropdown > .dropdown-toggle .caret{
+	border-bottom-color: #fff;
+    border-top-color: #fff;
+}
+
+/******** li  hover *******************/
+
+.navbar .dropdown-menu li > span:hover,
+.navbar .dropdown-menu .active > span {
+	background-image: none;
+	background-color: #1872C9;
+}
+
+.navbar .nav > li:hover > a,
+.navbar .nav > li:hover > span.separator {
+  background-color: #666666;
+  background-image: -moz-linear-gradient(top, #666666, #282828);
+  background-image: -ms-linear-gradient(top, #666666, #282828);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#666666), to(#282828));
+  background-image: -webkit-linear-gradient(top, #666666, #282828);
+  background-image: -o-linear-gradient(top, #666666, #282828);
+  background-image: linear-gradient(top, #666666, #282828);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#282828', GradientType=0);
+  color: #79BEFA;
+  text-shadow: 0 -1px 1px #056460;
+}
+.navbar .nav li.dropdown:hover > a  .caret{
+	border-bottom-color: #FFFFFF;
+    border-top-color: #FFFFFF;
+}
+
+.nav-collapse .dropdown-menu a:hover,
+.navbar-inverse .nav-collapse .dropdown-menu a:hover {
+	background-color: #1872C9;
+}
+
+ul.actions.dropdown-menu {
+	background-color: #FFFFFF;
+}
+
+ul.actions.dropdown-menu li a:hover {
+	color: #79BEFA;
+}
+
+/******** Parent active *******************/
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+	#gradient > .vertical(#1c68a2,#0053b3);
+	color: #FFFFFF;
+	text-shadow:1px 1px 1px #0564C0;
+}
+
+/***************** Sub  Menu **************************************/
+
+.navbar .dropdown-menu a{
+	color: white;
+}
+.navbar .dropdown-menu li > a:hover,
+.navbar .dropdown-menu li > a:focus,
+.navbar .dropdown-submenu:hover > a{
+	background-color: #1872C9;
+	background-image: none;
+}
+
+/*********************************************/
+
+#footer h3 {
+    color: #8EAAC6;
+    height: 60px;
+    letter-spacing: normal;
+    line-height: 51px;
+    text-shadow: 1px -1px 1px #000000;
+}
+/*********************************************/
+
+/************ read more  ****************************************************************/
+p.readmore .btn{
+	color: #2985C2;
+}
+
+.nav-tabs {
+	border-bottom-color: @blue;
+}
+
+.nav-tabs a,
+#myTab.nav-tabs > li > a   {
+	background-color: @blue;
+    border-color: @blue ;
+	color: #FFFFFF;
+}
+
+.nav-tabs>.open h3 a, .nav-tabs>.open p a{
+	background-color: #FFFFFF;
+	border-color: @blue @blue white;
+	color: @blue !important;
+}
+.nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus,
+#myTab.nav-tabs > .active > a,
+#myTab.nav-tabs > .active > a:hover{
+	background-color: transparent;
+	border-color: @blue @blue white;
+	color: @blue;
+}
+.nav-tabs > li > a:hover{
+	border-color: @blue ;
+	background-color: @blue;
+}
+#sliderNav .active a,#sliderNav a.active{
+	background: url("../../images/blue/pagination.png") no-repeat scroll 50% 0 transparent !important;
+}
+body #sliderNav a{
+	background: url("../../images/blue/pagination.png") no-repeat scroll 50% 100% transparent !important;
+}
