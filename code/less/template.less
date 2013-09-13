@@ -1,8 +1,23 @@
 @charset "utf-8";
 /************ Body ****************************************************************/
 
-body.home .wrapper-content{
-  background-image: none;
+body.home {
+  &.is_internet.v_9, &.is_internet.v_8{
+    .wrapper-content{
+      background-image: url(../../images/teaser_bg.png);
+      background-color: @white;
+      filter:none;
+    }
+  }
+  .wrapper-content{
+    background: -moz-linear-gradient(top,#C7C8C7 1%,#fff 24%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(1%,#C7C8C7),color-stop(24%,#fff));
+    background: -webkit-linear-gradient(top,#C7C8C7 1%,#fff 24%);
+    background: -o-linear-gradient(top,#C7C8C7 1%,#fff 24%);
+    background: -ms-linear-gradient(top,#C7C8C7 1%,#fff 24%);
+    background: linear-gradient(to bottom,#C7C8C7 1%,#fff 24%);
+    background-repeat: repeat-x;
+  }
 }
 ::selection{
   background-color: @selectionBackgroundColor !important;
