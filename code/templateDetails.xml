@@ -100,17 +100,17 @@
 					<option value="img-circle">TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_CIRCLE</option>
 					<option value="img-polaroid">TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_POLAROID</option>
 				</field>
-                <!-- End of default Wright params -->
 				<field name="documentationMode" type="list" default="0" label="TPL_JS_WRIGHT_DOCUMENTATION_MODE" description="TPL_JS_WRIGHT_DOCUMENTATION_MODE_DESC">
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
+                <!-- End of default Wright params -->
 			</fieldset>
 			<fieldset name="TPL_JS_IMPACTO_OPTIONS">
-                <field name="impacto_gradient_content" type="radio" default="1" label="TPL_JS_IMPACTO_GRADIENT_CONTENT" description="TPL_JS_IMPACTO_GRADIENT_CONTENT_DESC">
-                        <option value="0">JNO</option>
-                        <option value="1">JYES</option>
-                </field>
+				<field name="impacto_gradient_content" type="list" default="1" label="TPL_JS_IMPACTO_GRADIENT_CONTENT" description="TPL_JS_IMPACTO_GRADIENT_CONTENT_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
             </fieldset>
 		</fields>
 	</config>
