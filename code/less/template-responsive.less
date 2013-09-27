@@ -10,9 +10,14 @@
 		background-color: transparent;
 		background-image: none;
 	}
-	.navbar-inverse .nav-collapse .nav>li:hover{
-		>a, >span.separator {
-			color: @navbarInverseLinkColorHover;
+	.navbar-inverse .nav-collapse {
+		.nav>li:hover{
+			>a, >span.separator {
+				color: @navbarInverseLinkColorHover;
+			}
+		}
+		.dropdown-menu a:hover {
+			color: @black;
 		}
 	}
 
