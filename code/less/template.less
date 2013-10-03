@@ -76,40 +76,11 @@
   box-shadow: none;
   li {
     >a {
-      &:hover {
         -webkit-text-shadow: none;
         -moz-text-shadow: none;
         -ms-text-shadow: none;
         -o-text-shadow: none;
         text-shadow: none;
-      }
-    }
-  }
-}
-
-.navbar-inverse {
-  .nav,
-  .navbar-inner,
-  .nav .navbar-inner,
-  .navbar .nav,
-  .navbar .nav .navbar-inner {
-    filter: none;
-    li {
-      &.active {
-        a {
-          &:hover {
-            color: @black;
-            [class^="icon-"],
-            [class*=" icon-"] {
-              color: @black;
-            }
-            .caret {
-              border-top-color: @black;
-            }
-          }
-        }
-      }
-
     }
   }
 }
@@ -125,6 +96,7 @@
         background-color: @dropdownBackground;
       }
     }
+  }
 }
 
 /************ headings ****************************************************************/
