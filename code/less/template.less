@@ -114,51 +114,6 @@
   }
 }
 
-.nav.nav-tabs {
-  li {
-    &.active {
-      > a {
-        &:hover {
-          color: @black;
-          [class^="icon-"],
-          [class*=" icon-"] {
-            color: @black;
-          }
-          .caret {
-            border-top-color: @black;
-          }
-        }
-      }
-    }
-  }
-}
-
-.nav.nav-pills {
-  li {
-    > a {
-        [class^="icon-"],
-        [class*=" icon-"] {
-          color: @linkColor;
-        }
-        .caret {
-          border-top-color: @linkColor;
-        }
-    }
-    &.active {
-      > a {
-          color: @white;
-          [class^="icon-"],
-          [class*=" icon-"] {
-            color: @white;
-          }
-          .caret {
-            border-top-color: @white;
-          }
-        }
-    }
-  }
-}
-
 .module {
   .nav {
     li {
@@ -170,69 +125,7 @@
         background-color: @dropdownBackground;
       }
     }
-    &.nav-stacked,
-    &.nav-pills {
-      li {
-        &.active {
-          > a {
-            color: @white;
-            [class^="icon-"],
-            [class*=" icon-"] {
-              color: @white;
-            }
-            .caret {
-              border-top-color: @white;
-              border-left-color: transparent;
-            }
-            &:hover {
-              color: @black;
-              [class^="icon-"],
-              [class*=" icon-"] {
-                color: @black;
-              }
-              .caret {
-                border-top-color: @black;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .tabbable {
-    .nav {
-      li {
-        > a {
-          background-color: transparent;
-          &:hover {
-            color: @black;
-            [class^="icon-"],
-            [class*=" icon-"] {
-              color: @black;
-            }
-            .caret {
-              border-top-color: @black;
-            }
-          }
-        }
-        &.active {
-          > a {
-            background-color: transparent;
-            color: @black;
-            [class^="icon-"],
-            [class*=" icon-"] {
-              color: @black;
-            }
-            .caret {
-              border-top-color: @black;
-            }
-          }
-        }
-      }
-    }
-  }
 }
-
 
 /************ headings ****************************************************************/
 h1{
