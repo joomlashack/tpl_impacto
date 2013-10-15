@@ -223,35 +223,37 @@ div.total {
   background-color:#2E2F2D;
   background-image: none;
   filter:none;
-  color: #A6A6A6;
-  text-align: center;
-  text-shadow: 1px 1px 0 #000000;
   width: 100%;
   .grid-bottom2{
     background-image: url("../../images/footer_bg.png");
     background-repeat: repeat-x;
   }
-}
-#footer .footer-content a{
-  color: white;
-}
-#footer h3{
-  overflow: hidden;
-}
-
-#footer .span12{
-  width: auto!important;
-  display: table !important;
-  margin: 0 auto;
-  float: none;
+  .footer-content {
+    color: #A6A6A6;
+    text-align: center;
+    text-shadow: 1px 1px 0 #000000;
+    a {
+      color: @white;
+    }
+    h3 {
+      overflow: hidden;
+    }
+    .span12 {
+      width: auto!important;
+      display: table !important;
+      margin: 0 auto;
+      float: none;
+    }
+  }
+  + img {
+    display: none;
+  }
 }
 
 .footer1, .footer2{
   float: none;
 }
-#footer + img{
-  display: none;
-}
+
 #logo{
   padding: 5px 0;
 }
