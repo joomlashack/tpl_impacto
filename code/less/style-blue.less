@@ -19,6 +19,22 @@ p.readmore .btn{
 .nav-tabs {
 	border-bottom-color: @blue;
 }
+.tabs-left>.nav-tabs{
+  border-right-color: @blue;
+  .active>a,
+  .active>a:hover,
+  .active>a:focus{
+    border-color: @blue transparent @blue @blue;
+  }
+}
+.tabs-right>.nav-tabs{
+  border-left-color: @blue;
+  .active>a,
+  .active>a:hover,
+  .active>a:focus{
+    border-color: @blue @blue @blue transparent;
+  }
+}
 
 .nav-tabs a,
 #myTab.nav-tabs > li > a   {

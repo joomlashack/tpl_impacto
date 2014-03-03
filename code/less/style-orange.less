@@ -59,6 +59,22 @@ p.readmore .btn{
 .nav-tabs {
 	border-bottom-color: @orange;
 }
+.tabs-left>.nav-tabs{
+  border-right-color: @orange;
+  .active>a,
+  .active>a:hover,
+  .active>a:focus{
+    border-color: @orange transparent @orange @orange;
+  }
+}
+.tabs-right>.nav-tabs{
+  border-left-color: @orange;
+  .active>a,
+  .active>a:hover,
+  .active>a:focus{
+    border-color: @orange @orange @orange transparent;
+  }
+}
 
 .nav-tabs a,
 #myTab.nav-tabs > li > a {
