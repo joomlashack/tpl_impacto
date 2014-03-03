@@ -642,6 +642,14 @@ ul.actions.dropdown-menu{
       &.active{
         >a{
           background-color: @bodyBackground;
+          color: @linkColor;
+          .caret {
+            border-top-color: @linkColor;
+          }
+          [class^="icon-"],
+          [class*=" icon-"] {
+            color: @linkColor;
+          }
         }
       }
     }
