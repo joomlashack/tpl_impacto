@@ -28,9 +28,24 @@ p.readmore .btn{
 }
 
 .nav-tabs {
-	border-bottom-color: @green;
+  border-bottom-color: @green;
 }
-
+.tabs-left>.nav-tabs{
+  border-right-color: @green;
+  .active>a,
+  .active>a:hover,
+  .active>a:focus{
+    border-color: @green transparent @green @green;
+  }
+}
+.tabs-right>.nav-tabs{
+  border-left-color: @green;
+  .active>a,
+  .active>a:hover,
+  .active>a:focus{
+    border-color: @green @green @green transparent;
+  }
+}
 .nav-tabs a ,
 #myTab.nav-tabs > li > a {
     background-color: @green;
