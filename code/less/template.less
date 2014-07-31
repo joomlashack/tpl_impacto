@@ -373,11 +373,15 @@ body #slider {
   }
 }
 
-dl.nav-tabs{
-  padding-bottom: 7px;
-}
-dl.tabs.nav h3{
-  margin-top: 0;
+dl.tabs.nav{
+  h3 , p{
+    margin-top: 0;
+    a{display: block;}
+  }
+  dt.tabs{
+    margin-bottom: -1px;
+    > span{display: block;}
+  }
 }
 .nav-tabs a,
 #myTab.nav-tabs > li > a {
@@ -393,6 +397,9 @@ dl.tabs.nav h3{
       margin-right: 0.2em;
     }
   }
+}
+.nav-tabs > li{
+  margin-bottom: -1px;
 }
 
 /************ Menu  ****************************************************************/
