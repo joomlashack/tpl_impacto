@@ -25,11 +25,17 @@
 .wrapper-content{
   padding: 20px 20px 0;
 }
-.addGradient .wrapper-content{
-  background-image: url("../images/teaser_bg_sm.png");
-  background-repeat: repeat-x;
+.addGradient{
+  .wrapper-content{
+    background-image: url("../images/teaser_bg_sm.png");
+    background-repeat: repeat-x;
+  }
+  &.home{
+    .wrapper-content{
+      background-image: url("../images/teaser_bg.png");
+    }
+  }
 }
-
 /************ Icons  ****************************************************************/
 .module ul [class^="icon-"],
 .module ul [class*=" icon-"]
