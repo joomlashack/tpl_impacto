@@ -474,25 +474,35 @@ dl.tabs.nav{
       }
       &:hover,
       &:focus {
-        color: @black;
+        background-color: @linkColor;
+        color: @white;
+        text-decoration: underline;
+
         [class^="icon-"],
         [class*=" icon-"] {
-          color: @black;
+          color: @white;
         }
         .caret {
-          border-top-color: @black;
+          border-top-color: @white;
         }
       }
     }
     &.active {
       > a {
-        color: @black;
+        color: @color_four;
+
         [class^="icon-"],
         [class*=" icon-"] {
-          color: @black;
+          color: @color_four;
         }
         .caret {
-          border-top-color: @black;
+          border-top-color: @color_four;
+        }
+
+        &:hover,
+        &:focus{
+          background-color: @bodyBackground;
+          text-decoration: none;
         }
       }
     }
@@ -540,11 +550,72 @@ dl.tabs.nav{
           display: none;
         }
       }
+
+      &.active {
+        >a{
+          color: @navbarLinkColorActive;
+         .caret {
+              border-top-color: @navbarLinkColorActive;
+          }
+          [class^="icon-"],
+          [class*=" icon-"] {
+            color: @navbarLinkColorActive;
+          }
+
+          &:hover,
+          &:focus{
+           color: @navbarLinkColorActive;
+
+           .caret {
+                border-top-color: @navbarLinkColorActive;
+            }
+            [class^="icon-"],
+            [class*=" icon-"] {
+              color: @navbarLinkColorActive;
+            }
+          }
+        }
+      }
     }
   }
   .dropdown-menu {
     border: 0;
   }
+}
+
+.navbar-inverse{
+  .nav{
+    >li{
+
+      &.active {
+        >a{
+          color: @navbarInverseLinkColorActive;
+         .caret {
+              border-top-color: @navbarInverseLinkColorActive;
+          }
+          [class^="icon-"],
+          [class*=" icon-"] {
+            color: @navbarInverseLinkColorActive;
+          }
+        }
+
+        &:hover,
+        &:focus{
+          >a{
+            color: @navbarInverseLinkColorActive;
+           .caret {
+                border-top-color: @navbarInverseLinkColorActive;
+            }
+            [class^="icon-"],
+            [class*=" icon-"] {
+              color: @navbarInverseLinkColorActive;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
 ul.actions.dropdown-menu{
@@ -613,14 +684,14 @@ ul.actions.dropdown-menu{
             background-image: none;
             background-color: transparent;
             filter: none;
-            color: @navbarLinkColorActive;
+            color: @color_five;
 
             .caret {
-              border-top-color: @navbarLinkColorActive;
+              border-top-color: @color_five;
             }
             [class^="icon-"],
             [class*=" icon-"] {
-              color: @navbarLinkColorActive;
+              color: @color_five;
             }
           }
         }
@@ -629,26 +700,26 @@ ul.actions.dropdown-menu{
             background-color: transparent;
             background-image: none;
             filter:none;
-            color: @navbarLinkColorActive;
+            color: @color_five;
 
             .caret {
-              border-top-color: @navbarLinkColorActive;
+              border-top-color: @color_five;
             }
             [class^="icon-"],
             [class*=" icon-"] {
-              color: @navbarLinkColorActive;
+              color: @color_five;
             }
 
             &:hover,
             &:focus{
               background-color: transparent;
-              color: @navbarLinkColorActive;
+              color: @color_five;
               .caret {
-                border-top-color: @navbarLinkColorActive;
+                border-top-color: @color_five;
               }
               [class^="icon-"],
               [class*=" icon-"] {
-                color: @navbarLinkColorActive;
+                color: @color_five;
               }
             }
           }
@@ -665,9 +736,38 @@ ul.actions.dropdown-menu{
       }
     }
   }
+
+  .nav.nav-tabs{
+    > li.active {
+      > a {
+        &:hover,
+        &:focus{
+          background-color: @bodyBackground;
+          color: @linkColor;
+
+         .caret {
+            border-top-color: @linkColor;
+          }
+
+          [class^="icon-"],
+          [class*=" icon-"] {
+            color: @linkColor;
+          }
+        }
+      }
+    }
+  }
+
   .tabs-left>.nav-tabs,
   .tabs-right>.nav-tabs{
     > li{
+      > a{
+        &:hover,
+        &:focus{
+          background-color: @linkColor;
+        }
+      }
+
       &.active{
         >a{
           background-color: @bodyBackground;
@@ -696,3 +796,11 @@ ul.actions.dropdown-menu{
     margin-bottom: 0;
   }
 }
+
+.tabs-right > .nav-tabs > li > a:hover, .tabs-right > .nav-tabs > li > a:focus {
+    border-color: @linkColor;
+}
+.tabs-left > .nav-tabs > li > a:hover, .tabs-left > .nav-tabs > li > a:focus {
+    border-color: @linkColor;
+}
+
