@@ -477,11 +477,11 @@ body #slider {
 
   > .active {
     > a {
-      border-color: @tabsBackground @tabsBackground @bodyBackground @tabsBackground;
+      border-color: @tabsBackground @tabsBackground transparent @tabsBackground;
       color : @tabsBackground;
 
       &:hover, &:focus {
-        border-color: @tabsBackground @tabsBackground @bodyBackground @tabsBackground;
+        border-color: @tabsBackground @tabsBackground transparent @tabsBackground;
         color : @tabsBackground;
       }
     }
@@ -542,11 +542,38 @@ body #slider {
   }
 }
 
+.tabs-left > .nav-tabs {
+  border-right-color: @tabsBackground;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: @tabsBackground transparent @tabsBackground @tabsBackground;
+}
+
+.tabs-right > .nav-tabs {
+  border-left-color: @tabsBackground;
+}
+
+.tabs-right > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a:hover,
+.tabs-right > .nav-tabs .active > a:focus {
+  border-color: @tabsBackground @tabsBackground @tabsBackground transparent;
+}
+
 .navbar {
+  font-family: "Helvetica", @sansFontFamily;
+
   .nav{
     >li{
       > a{
         font-weight: bold;
+
+        &:hover, &:focus {
+          #gradient > .vertical(@navbarLinkGradientTopHover,@navbarLinkGradientBottomHover);
+          text-shadow: 1px 1px 1px @navbarLinkTextShadowHover;
+        }
       }
 
       .dropdown-menu {
@@ -557,6 +584,17 @@ body #slider {
         &:before, &:after {
           display: none;
           content: none;
+        }
+      }
+    }
+
+    > .active {
+      > a {
+        text-shadow: 1px 1px 1px @navbarLinkTextShadowActive;
+        #gradient > .vertical(@navbarLinkGradientTopActive,@navbarLinkGradientBottomActive);
+
+        &:hover, &:focus {
+          #gradient > .vertical(@navbarLinkGradientTopActive,@navbarLinkGradientBottomActive);
         }
       }
     }
