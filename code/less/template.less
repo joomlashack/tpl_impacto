@@ -360,35 +360,6 @@ body #slider {
   }
 }
 
-dl.tabs.nav{
-  h3 , p{
-    margin-top: 0;
-    a{display: block;}
-  }
-  dt.tabs{
-    margin-bottom: -1px;
-    > span{display: block;}
-  }
-}
-
-.nav-tabs a {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 8px 12px;
-}
-.nav-tabs {
-  .tabs {
-    h3 a {
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
-    }
-  }
-}
-.nav-tabs > li{
-  margin-bottom: -1px;
-}
 
 .form-search{
   .finder{
@@ -451,31 +422,122 @@ dl.tabs.nav{
             border-top-color: @linkColor;
           }
         }
+
+      }
+      &.active {
+        > a {
+          color: @linkColor;
+
+          .caret {
+            border-top-color: @linkColor;
+          }
+
+          &:hover, &:focus{
+            color: @linkColor;
+
+            .caret {
+              border-top-color: @linkColor;
+            }
+          }
+        }
       }
     }
   }
 }
 
-.nav-tabs {
-  li {
-    > a {
-      color: @white;
+.nav-tabs{
+  border-color: @tabsBackground;
 
-      &:hover,
-      &:focus {
+  > li{
+    > a{
+      background-color: @tabsBackground;
+      color: @white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 8px 12px;
+
+      &:hover, &:focus {
+        background-color: @tabsBackgroundHover;
+        border-color: @tabsBackgroundHover @tabsBackgroundHover @tabsBackgroundHover @tabsBackgroundHover;
         color: @white;
       }
     }
-    &.active {
-      > a {
-        background-color: @bodyBackground;
 
-        &:hover,
-        &:focus{
-          background-color: @bodyBackground;
-          text-decoration: none;
+    > .dropdown-toggle {
+      .caret {
+        border-top-color: @white;
+      }
+      &:hover, &:focus {
+        .caret {
+          border-top-color: @white;
         }
       }
+    }
+  }
+
+  > .active {
+    > a {
+      border-color: @tabsBackground @tabsBackground @bodyBackground @tabsBackground;
+      color : @tabsBackground;
+
+      &:hover, &:focus {
+        border-color: @tabsBackground @tabsBackground @bodyBackground @tabsBackground;
+        color : @tabsBackground;
+      }
+    }
+
+    > .dropdown-toggle {
+      .caret {
+        border-top-color: @tabsBackground;
+      }
+
+      &:hover, &:focus {
+        .caret {
+          border-top-color: @tabsBackground;
+        }
+      }
+    }
+  }
+  dt {
+    a{
+      background-color: @tabsBackground;
+      color: @white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 8px 12px;
+
+      .caret {
+        border-top-color: @white;
+      }
+
+      &:hover, &:focus {
+        color: black;
+        text-decoration: none;
+
+        .caret {
+          border-top-color: black;
+        }
+      }
+    }
+    &.open {
+      a {
+        color : black;
+
+        .caret {
+          border-top-color: black;
+        }
+
+        &:hover, &:focus {
+          color : black;
+
+          .caret {
+            border-top-color: black;
+          }
+        }
+      }
+    }
+    h3, p {
+      margin-top: 0;
     }
   }
 }
@@ -486,12 +548,18 @@ dl.tabs.nav{
       > a{
         font-weight: bold;
       }
-    }
-  }
 
-  .dropdown-menu {
-    .border-radius(0 0 6px 6px);
-    .box-shadow(none);
+      .dropdown-menu {
+        .border-radius(0 0 6px 6px);
+        .box-shadow(none);
+        border: 0;
+
+        &:before, &:after {
+          display: none;
+          content: none;
+        }
+      }
+    }
   }
 }
 
@@ -506,11 +574,4 @@ dl.tabs.nav{
 ul.actions.dropdown-menu{
   padding-bottom: 5px;
   padding-top: 5px;
-}
-
-.tabs-left>.nav-tabs{
-  border-right-color: #000;
-}
-.tabs-right>.nav-tabs{
-  border-left-color: #000;
 }
