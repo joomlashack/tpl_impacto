@@ -228,8 +228,10 @@ div.total {
   }
   .footer-content {
     color: #A6A6A6;
+    padding-top: 10px;
     text-align: center;
     text-shadow: 1px 1px 0 #000000;
+
     a {
       color: @white;
     }
@@ -564,6 +566,7 @@ body #slider {
     >li{
       > a{
         font-weight: bold;
+        text-shadow: 1px 1px 1px @navbarLinkTextShadow;
 
         &:hover, &:focus {
           #gradient > .vertical(@navbarLinkGradientTopHover,@navbarLinkGradientBottomHover);
@@ -589,7 +592,32 @@ body #slider {
         #gradient > .vertical(@navbarLinkGradientTopActive,@navbarLinkGradientBottomActive);
 
         &:hover, &:focus {
+          text-shadow: 1px 1px 1px @navbarLinkTextShadowActive;
           #gradient > .vertical(@navbarLinkGradientTopActive,@navbarLinkGradientBottomActive);
+        }
+      }
+    }
+  }
+}
+
+.navbar-inverse {
+  .nav{
+    >li{
+      > a{
+        text-shadow: 1px 1px 1px #666;
+
+        &:hover, &:focus {
+          text-shadow: 1px 1px 1px @navbarLinkTextShadowHover;
+        }
+      }
+    }
+
+    > .active {
+      > a {
+        text-shadow: 1px 1px 1px @navbarLinkTextShadowActive;
+
+        &:hover, &:focus {
+          text-shadow: 1px 1px 1px @navbarLinkTextShadowActive;
         }
       }
     }
