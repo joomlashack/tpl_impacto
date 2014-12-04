@@ -33,26 +33,16 @@
 		}
 	}
 
-	.nav,
-	.navbar-inner,
-	.nav .navbar-inner,
-	.navbar .nav,
-	.navbar .nav .navbar-inner {
+	.nav{
 		li {
-			.dropdown,
 			.dropdown-menu {
 				background-color: @black;
 			}
 		}
 	}
 
-
 	.navbar-inverse {
-		.nav,
-		.navbar-inner,
-		.nav .navbar-inner,
-		.navbar .nav,
-		.navbar .nav .navbar-inner {
+		.nav {
 			li {
 				&.active {
 					> a {
@@ -94,10 +84,10 @@
 		background-color: transparent;
 	}
 
-	.nav-collapse .nav > li > a:hover,
-	.nav-collapse .nav > li > a:focus,
-	.nav-collapse .dropdown-menu a:hover,
-	.nav-collapse .dropdown-menu a:focus {
+	.navbar .nav-collapse .nav > li > a:hover,
+	.navbar .nav-collapse .nav > li > a:focus,
+	.navbar .nav-collapse .dropdown-menu a:hover,
+	.navbar .nav-collapse .dropdown-menu a:focus {
 		background-color: darken(@navbarInverseBackground, 3%);
 	}
 
