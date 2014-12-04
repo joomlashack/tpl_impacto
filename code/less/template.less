@@ -541,6 +541,42 @@ body #slider {
       margin-top: 0;
     }
   }
+
+  &.nav-stacked {
+    > li {
+      > a {
+        border-color: @tabsBackground;
+
+        &:hover, &:focus {
+          border-color: @tabsBackground;
+        }
+      }
+    }
+
+    > .active {
+      > a {
+        background-color: @tabsBackgroundHover;
+        color: @white;
+
+        &:hover, &:focus {
+          background-color: @tabsBackgroundHover;
+          color: @white;
+        }
+      }
+
+      > .dropdown-toggle {
+        .caret {
+          border-top-color: @white;
+        }
+
+        &:hover, &:focus{
+          .caret {
+            border-top-color: @white;
+          }
+        }
+      }
+    }
+  }
 }
 
 .tabs-left > .nav-tabs {
@@ -561,6 +597,14 @@ body #slider {
 .tabs-right > .nav-tabs .active > a:hover,
 .tabs-right > .nav-tabs .active > a:focus {
   border-color: @tabsBackground @tabsBackground @tabsBackground transparent;
+}
+
+.tabs-below > .nav-tabs {
+  border-top-color: @tabsBackground;
+}
+
+.tabs-below > .nav-tabs > .active > a, .tabs-below > .nav-tabs > .active > a:hover, .tabs-below > .nav-tabs > .active > a:focus {
+    border-color: transparent @tabsBackground @tabsBackground;
 }
 
 .navbar {
