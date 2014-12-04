@@ -511,28 +511,23 @@ body #slider {
       }
 
       &:hover, &:focus {
-        color: black;
+        background-color: @tabsBackgroundHover;
         text-decoration: none;
-
-        .caret {
-          border-top-color: black;
-        }
       }
     }
+
     &.open {
       a {
-        color : black;
+        color : @tabsBackground;
+        border-color: @tabsBackground @tabsBackground @bodyBackground;
 
         .caret {
-          border-top-color: black;
+          border-top-color: @tabsBackground;
         }
 
-        &:hover, &:focus {
-          color : black;
-
-          .caret {
-            border-top-color: black;
-          }
+        &:hover , &:focus {
+          background-color: transparent;
+          border-color: @tabsBackground @tabsBackground @bodyBackground;
         }
       }
     }
