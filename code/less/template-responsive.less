@@ -33,26 +33,16 @@
 		}
 	}
 
-	.nav,
-	.navbar-inner,
-	.nav .navbar-inner,
-	.navbar .nav,
-	.navbar .nav .navbar-inner {
+	.nav{
 		li {
-			.dropdown,
 			.dropdown-menu {
 				background-color: @black;
 			}
 		}
 	}
 
-
 	.navbar-inverse {
-		.nav,
-		.navbar-inner,
-		.nav .navbar-inner,
-		.navbar .nav,
-		.navbar .nav .navbar-inner {
+		.nav {
 			li {
 				&.active {
 					> a {
@@ -72,9 +62,6 @@
 			}
 		}
 	}
-
-
-
 }
 
 
@@ -87,5 +74,224 @@
 		margin-left: -20px;
 		margin-right: -20px;
 	}
+
+	#top, #top2 {
+		padding: 10px 20px;
+	}
+
+	.nav-collapse .dropdown-submenu:hover>a,
+	.nav-collapse .dropdown-submenu:focus>a {
+		background-color: transparent;
+	}
+
+	.navbar .nav-collapse .nav > li > a:hover,
+	.navbar .nav-collapse .nav > li > a:focus,
+	.navbar .nav-collapse .dropdown-menu a:hover,
+	.navbar .nav-collapse .dropdown-menu a:focus {
+		background-color: darken(@navbarInverseBackground, 3%);
+	}
+
+	    .filter-search{
+        select {
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .filters {
+        > *{
+            display: block;
+            width: auto;
+            margin-bottom: 10px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            &.pull-left,
+            &.pull-right{
+                float: none;
+            }
+
+            select{
+                width: 100%;
+            }
+        }
+    }
+
+    #finder-search{
+        .well{
+            > * {
+                display: block;
+                margin-bottom: 10px;
+                width: 100%;
+                .box-sizing(border-box);
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .form-search .input-append, .form-inline .input-append, .form-search .input-prepend, .form-inline .input-prepend {
+        margin-bottom: 10px;
+    }
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    .uneditable-input {
+        &[class*="span"]{
+            max-width: 90%;
+            &:first-child{
+                padding-left: 6px;
+            }
+            &:last-child{
+                padding-right: 6px;
+            }
+        }
+    }
+	.input-prepend,
+    .input-append{
+        display: block;
+        textarea,
+        input[type="text"],
+        input[type="password"],
+        input[type="datetime"],
+        input[type="datetime-local"],
+        input[type="date"],
+        input[type="month"],
+        input[type="time"],
+        input[type="week"],
+        input[type="number"],
+        input[type="email"],
+        input[type="url"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="color"],
+        .uneditable-input {
+            display: block;
+            margin-bottom: 10px;
+
+            &[class*="span"]{
+                display: block;
+                float: none;
+            }
+        }
+        > * {
+            margin-bottom: 10px;
+        }
+
+        .btn{
+            margin-right: 3px;
+        }
+
+        .btn-group {
+            .caret {
+                &:first-child {
+                    &:last-child {
+                        margin-left: 3px;
+                        margin-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+    .form-search {
+        .input-prepend,
+        .input-append{
+            display: block;
+        }
+    }
+    div {
+        .bs-docs-example {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            &:after {
+                padding-right: 20px;
+            }
+        }
+    }
+
+    .row-fluid .controls-row [class*="span"]+[class*="span"]{
+        margin-left: 0;
+    }
+    .checkbox.inline {
+        line-height: 24px;
+    }
+    .form-search input,
+    .form-inline input,
+    .form-horizontal input,
+    .form-search textarea,
+    .form-inline textarea,
+    .form-horizontal textarea,
+    .form-search select,
+    .form-inline select,
+    .form-horizontal select,
+    .form-search .help-inline,
+    .form-inline .help-inline,
+    .form-horizontal .help-inline,
+    .form-search .uneditable-input,
+    .form-inline .uneditable-input,
+    .form-horizontal .uneditable-input,
+    .form-search .input-prepend,
+    .form-inline .input-prepend,
+    .form-horizontal .input-prepend,
+    .form-search .input-append,
+    .form-inline .input-append,
+    .form-horizontal .input-append {
+        margin-bottom: 10px;
+
+        + .btn {
+        	margin-bottom: 10px;
+        }
+    }
+
+    .navbar {
+        textarea,
+        input[type="text"],
+        input[type="password"],
+        input[type="datetime"],
+        input[type="datetime-local"],
+        input[type="date"],
+        input[type="month"],
+        input[type="time"],
+        input[type="week"],
+        input[type="number"],
+        input[type="email"],
+        input[type="url"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="color"],
+        .uneditable-input {
+            max-width: 75%;
+            width: auto;
+        }
+    }
+
+    .btn-large,
+    .form-actions .btn{
+        margin-bottom: 10px;
+    }
+    .nav-tabs>li:last-child>a, .nav-tabs>.active:last-child>a {
+    	border-bottom: 0;
+    }
+    .navbar-form input, .navbar-form select, .navbar-form .btn {
+    	margin-bottom: 10px;
+    }
 
 }

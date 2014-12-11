@@ -2,6 +2,33 @@
 // Variables
 // --------------------------------------------------
 
+
+// Options dropdown-submenu , this is a element parent with arrow for submenu
+// You can use true/false for show arrow
+// -------------------------
+@dropdownSubmenuLinkArrow : true;
+@navbarInverseDropdownSubmenuLinkArrow : true;
+
+
+// Gradient options of dropdown links
+// You can use true/false for add gradient
+// -------------------------
+
+@dropdownLinkGradient : false;
+@navbarInverseDropdownLinkGradient : false;
+
+
+// Dropdown For navbar-inverse
+// -------------------------
+@navbarInverseDropdownBackground : @dropdownBackground;
+@navbarInverseDropdownBorderFallback : #ccc;
+@navbarInverseDropdownBorder : @dropdownBorder;
+@navbarInverseDropdownLinkColor : @dropdownLinkColor;
+@navbarInverseDropdownLinkColorHover : @dropdownLinkColorHover;
+@navbarInverseDropdownLinkColorActive : @dropdownLinkColorActive;
+@navbarInverseDropdownLinkBackgroundHover : @dropdownLinkBackgroundHover;
+@navbarInverseDropdownLinkBackgroundActive : @dropdownLinkBackgroundActive;
+
 @color_one  : @white;  // body backgroundColor
 @color_two  : #2F4145; // Header top Gradient
 @color_three: #20282A; // Header bottom Gradient
@@ -9,6 +36,20 @@
 @color_five : #e84d03; // Navbar bottom Gradient
 
 @selectionBackgroundColor:#F8C4AC;
+
+@tabsBackground : @orange;
+@tabsBackgroundHover : darken(@tabsBackground, 5%);
+
+@navbarLinkGradientTopHover     : #2F4145;
+@navbarLinkGradientBottomHover  : #20282A;
+@navbarLinkGradientTopActive    : #FF9332;
+@navbarLinkGradientBottomActive : #F57108;
+
+@navbarLinkTextShadow       : #B13B02;
+@navbarLinkTextShadowHover  : #000;
+@navbarLinkTextShadowActive : #FEA356;
+
+
 // Global values
 // --------------------------------------------------
 
@@ -193,7 +234,7 @@
 
 @navbarText:                      #777;
 @navbarLinkColor:                 @white;
-@navbarLinkColorHover:            @white;
+@navbarLinkColorHover:            #FE5C11;
 @navbarLinkColorActive:           #7f2800;
 @navbarLinkBackgroundHover:       #20282a;
 @navbarLinkBackgroundActive:      #ff6d28;
