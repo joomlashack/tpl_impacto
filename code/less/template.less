@@ -308,12 +308,12 @@ body .shackSliderslider .slideTitle h2 {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-#sliderNav a {
-    height: 16px !important;
-    margin: 5px 2px !important;
+body #sliderNav a {
+    height: 16px;
+    margin: 0;
     text-indent: -9999px;
-    width: 16px !important;
 }
+
 #sliderNav.pagination ul > li > a,
 #sliderNav.pagination ul > li > span{
   border:0 none;
@@ -321,37 +321,38 @@ body .shackSliderslider .slideTitle h2 {
 #sliderNav.pagination ul{
   box-shadow: none;
 }
+body #sliderNav a.sliderPrev,
+body #sliderNav a.sliderNext {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 body #sliderNav a.sliderPrev{
   background-image: url(../images/arrow-prev.png) !important;
-  background-position: center top;
-  background-repeat: no-repeat;
 }
 body #sliderNav a.sliderNext {
   background-image: url(../images/arrow-next.png) !important;
-  background-position: center top;
-  background-repeat: no-repeat;
 }
+
 body .slidermanButtonsCont .sliderPrev,
 body .slidermanButtonsCont .sliderNext{
   margin-top: 6%;
 }
-#slider a{
-  text-indent: -9999px;
-}
-#slider a.sliderPrev {
-    background: url("../images/arrows.png") no-repeat scroll 0 0 transparent !important;
+
+#slider a.sliderPrev,
+#slider a.sliderNext {
     color: transparent;
     height: 30px;
     padding: 0 !important;
     width: 30px !important;
+}
+
+#slider a.sliderPrev {
+    background: url("../images/arrows.png") no-repeat scroll 0 0 transparent !important;
 }
 #slider a.sliderNext {
     background: url("../images/arrows.png") no-repeat scroll -30px 0 transparent !important;
-    color: transparent;
-    height: 30px;
-    padding: 0 !important;
-    width: 30px !important;
 }
+
 body #slider {
     border: 5px solid white;
     box-shadow: 0 0 8px #999999;
