@@ -65,7 +65,7 @@ defined('_JEXEC') or die('Restricted access');
 						<?php endif;?>
 						<div id="main-content" class="row-fluid">
 							<!-- sidebar1 -->
-							<aside id="sidebar1"  class="clearfix">
+							<aside id="sidebar1">
 								<w:module name="sidebar1" chrome="xhtml" />
 							</aside>
 							<!-- main -->
@@ -95,7 +95,7 @@ defined('_JEXEC') or die('Restricted access');
 								<?php endif;?>
 							</section>
 							<!-- sidebar2 -->
-							<aside id="sidebar2"  class="clearfix">
+							<aside id="sidebar2">
 								<w:module name="sidebar2" chrome="xhtml" />
 							</aside>
 						</div>
