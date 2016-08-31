@@ -34,16 +34,19 @@ select:focus:required:invalid:focus{
 
 // ----------------------------------------------------------------------------------
 
-p.readmore .btn{
-  color: @red;
-}
-
-// ----------------------------------------------------------------------------------
-
 #sliderNav .active a,#sliderNav a.active{
-	background: url("../images/red/pagination-red.png") no-repeat scroll 50% 0 transparent !important;
+    background-image: url("../images/red/pagination.png");
 }
 
 body #sliderNav a{
-	background: url("../images/red/pagination-red.png") no-repeat scroll 50% 100% transparent !important;
+    background-image: url("../images/red/pagination.png");
+}
+
+// ----------------------------------------------------------------------------------
+// Shackslides3
+
+div.jss-slider .jss-navigation .jss-navigation-dots .owl-dot {
+    > div {
+        background-image: url("../images/red/pagination.png");
+    }
 }
