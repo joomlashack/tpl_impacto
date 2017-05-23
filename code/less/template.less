@@ -126,9 +126,6 @@ p.readmore .btn{
 }
 
 /************ Style for Template  ****************************************************************/
-label{
-  min-width: 74px;
-}
 dt label{
   min-width: 167px;
 }
@@ -786,4 +783,17 @@ form {
 
 .label-info, .badge-info {
     background-color: #2E2F2D;
+}
+
+// Fixes
+
+body {
+
+	.row-fluid {
+
+		input[class*="span"] {
+			.box-sizing(border-box);
+			min-height: 30px;
+		}
+	}
 }
