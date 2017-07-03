@@ -53,14 +53,14 @@ defined('_JEXEC') or die('Restricted access');
 						<?php if ($this->countModules('grid-top')) :
 						?>
 						<div id="grid-top">
-							<w:module type="<?php echo $gridMode;?>" name="grid-top" chrome="wrightflexgrid" />
+							<w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" />
 						</div>
 						<?php endif;?>
 						<?php if ($this->countModules('grid-top2')) :
 						?>
 						<!-- grid-top2 -->
 						<div id="grid-top2">
-							<w:module type="<?php echo $gridMode;?>" name="grid-top2" chrome="wrightflexgrid" />
+							<w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" />
 						</div>
 						<?php endif;?>
 						<div id="main-content" class="row-fluid">
@@ -103,7 +103,7 @@ defined('_JEXEC') or die('Restricted access');
 						?>
 						<!-- grid-bottom -->
 						<div id="grid-bottom"  class="clearfix" >
-							<w:module type="<?php echo $gridMode;?>" name="grid-bottom" chrome="wrightflexgrid" />
+							<w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" />
 						</div>
 						<?php endif;?>
 
@@ -127,7 +127,7 @@ defined('_JEXEC') or die('Restricted access');
 								<div class="<?php echo $containerClass ?>">
 										<!-- grid-bottom2 -->
 										<div id="grid-bottom2" >
-											<w:module type="<?php echo $gridMode;?>" name="grid-bottom2" chrome="wrightflexgrid" />
+											<w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" />
 										</div>
 								</div>
 							</div>

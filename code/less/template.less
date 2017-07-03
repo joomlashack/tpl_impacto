@@ -85,6 +85,11 @@ aside .module h3{
   color:black;
 }
 
+/************ Featured  ****************************************************************/
+#featured {
+	margin-bottom: 20px;
+}
+
 /************ List style in modules  ****************************************************************/
 
 #login-form ul.nav.nav-list.well{
@@ -785,6 +790,10 @@ form {
     background-color: #2E2F2D;
 }
 
+.badge {
+	text-shadow: none;
+}
+
 // Fixes
 
 body {
@@ -794,6 +803,104 @@ body {
 		input[class*="span"] {
 			.box-sizing(border-box);
 			min-height: 30px;
+		}
+	}
+}
+
+// Module class suffixes
+
+.module,
+.moduletable {
+
+	&_ms1,
+	&_ms2,
+	&_ms3 {
+		padding: 20px;
+
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6 {
+			margin-top: 0;
+		}
+	}
+
+	&_ms1 {
+		border: 2px solid @color_four;
+
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6 {
+			color: @color_four !important;
+		}
+	}
+
+	&_ms2 {
+		border: 2px dashed @color_four;
+
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6 {
+			color: @color_four !important;
+		}
+	}
+
+	&_ms3 {
+		background: @color_four;
+
+		a,
+		p,
+		div,
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6 {
+			color: @white !important;
+		}
+
+		.badge:not(.badge-success):not(.badge-warning):not(.badge-important):not(.badge-info):not(.badge-inverse) {
+			background: @white;
+			color: @color_four;
+		}
+
+		a {
+			text-decoration: underline;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: @grayLighter !important;
+			}
+		}
+	}
+
+	&_ms4 {
+		border: 2px solid @color_four;
+
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6 {
+			color: @white !important;
+			background: @color_four;
+			margin: 0;
+			padding: 10px 15px;
+		}
+
+		> div {
+			padding: 20px;
 		}
 	}
 }
