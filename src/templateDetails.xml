@@ -117,17 +117,18 @@
 				<field name="mobilemenuspacer" label="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_label" description="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_DESC" type="spacer" />
 				<field name="mobile_menu_text" type="text" default="" label="TPL_JS_WRIGHT_MOBILE_MENU_TEXT" description="TPL_JS_WRIGHT_MOBILE_MENU_TEXT_DESC" />
                 <!-- End of default Wright params -->
-			                
-                <field
-                    type="customfooter"
-                    name="customfooter"
-                    media="tpl_js_impacto" />
             </fieldset>
 			<fieldset name="TPL_JS_IMPACTO_OPTIONS">
 				<field name="impacto_gradient_content" type="radio" class="btn-group btn-group-yesno" default="1" label="TPL_JS_IMPACTO_GRADIENT_CONTENT" description="TPL_JS_IMPACTO_GRADIENT_CONTENT_DESC">
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
+            </fieldset>
+            <fieldset name="footer" addfieldpath="/templates/js_impacto/form/fields">     
+                <field
+                    type="customfooter"
+                    name="customfooter"
+                    media="tpl_js_impacto" />
             </fieldset>
 		</fields>
 	</config>
