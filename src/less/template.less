@@ -227,6 +227,7 @@ div.total {
   background-image: none;
   filter:none;
   width: 100%;
+
   .grid-bottom2{
     background-image: url("../images/footer_bg.png");
     background-repeat: repeat-x;
@@ -257,6 +258,17 @@ div.total {
   }
   + img {
     display: none;
+  }
+  .menu {
+
+		a {
+
+			&:focus,
+			&:hover,
+			&:active {
+				color: @linkColor;
+			}
+		}
   }
 }
 
