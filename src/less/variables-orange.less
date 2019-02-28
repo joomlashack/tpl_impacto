@@ -35,23 +35,23 @@
 
 @color_one  : @white;  // body backgroundColor
 @color_two  : #2F4145; // Header top Gradient
-@color_three: #20282A; // Header bottom Gradient
-@color_four : #fe5c11; // Navbar top Gradient
-@color_five : #e84d03; // Navbar bottom Gradient
+@color_three: darken(desaturate(spin(@color_two, 1.0909), 5.4520), 8.2353); // Header bottom Gradient
+@color_four : #fe5c11; // Navbar top Gradient - main color!
+@color_five : darken(desaturate(spin(@color_four, 0.4013), 1.7164), 7.0588); // Navbar bottom Gradient
 
 @selectionBackgroundColor:#F8C4AC;
 
-@tabsBackground : @orange;
+@tabsBackground : darken(desaturate(spin(@color_four, 8.4335), 5.1206), 7.0588);
 @tabsBackgroundHover : darken(@tabsBackground, 5%);
 
 @navbarLinkGradientTopHover     : #2F4145;
 @navbarLinkGradientBottomHover  : #20282A;
-@navbarLinkGradientTopActive    : #FF9332;
-@navbarLinkGradientBottomActive : #F57108;
+@navbarLinkGradientTopActive    : lighten(saturate(spin(@color_four, 9.4029), 0.8368), 6.6667);
+@navbarLinkGradientBottomActive : darken(desaturate(spin(@color_four, 7.5949), 5.4873), 3.5294);
 
-@navbarLinkTextShadow       : #B13B02;
+@navbarLinkTextShadow       : darken(desaturate(spin(@color_four, 0.5555), 1.3978), 18.0392);
 @navbarLinkTextShadowHover  : #000;
-@navbarLinkTextShadowActive : #FEA356;
+@navbarLinkTextShadowActive : lighten(desaturate(spin(@color_four, 8.5127), 0.3397), 13.5294);
 
 
 // Global values
@@ -89,8 +89,8 @@
 
 // Links
 // -------------------------
-@linkColor:             @orange;
-@linkColorHover:        #ff5e0f;
+@linkColor:             darken(desaturate(spin(@color_four, 8.4335), 5.1206), 7.0588);
+@linkColorHover:        darken(saturate(spin(@color_four, 0.7627), 0.8368), 0.1961);
 
 
 // Typography
@@ -139,7 +139,7 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #ccc;
 
-@btnPrimaryBackground:              #E46C07;
+@btnPrimaryBackground:              lighten(desaturate(spin(@color_five, 8.0322), 3.4043), 0.0000);
 @btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 10%);
 
 @btnInfoBackground:                 #5bc0de;
@@ -179,8 +179,8 @@
 @dropdownLinkColorHover:        @white;
 @dropdownLinkColorActive:       @white;
 
-@dropdownLinkBackgroundActive:  #DA6707;
-@dropdownLinkBackgroundHover:   #DA6707;
+@dropdownLinkBackgroundActive:  darken(desaturate(spin(@color_four, 8.3112), 5.3854), 9.0196);
+@dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
 
 
 
@@ -238,10 +238,10 @@
 
 @navbarText:                      #777;
 @navbarLinkColor:                 @white;
-@navbarLinkColorHover:            #FE5C11;
-@navbarLinkColorActive:           #7f2800;
+@navbarLinkColorHover:            lighten(saturate(spin(@color_four, 0.0000), 0.0000), 0.0000);
+@navbarLinkColorActive:           darken(saturate(spin(@color_four, -0.0897), 0.8368), 28.2353);
 @navbarLinkBackgroundHover:       #20282a;
-@navbarLinkBackgroundActive:      #ff6d28;
+@navbarLinkBackgroundActive:      lighten(saturate(spin(@color_four, 0.2685), 0.8368), 4.7059);
 
 @navbarBrandColor:                @navbarLinkColor;
 
@@ -252,8 +252,8 @@
 
 @navbarInverseText:                      @grayLight;
 @navbarInverseLinkColor:                 @white;
-@navbarInverseLinkColorHover:            #FE5C11;
-@navbarInverseLinkColorActive:           #7F2800;
+@navbarInverseLinkColorHover:            lighten(saturate(spin(@color_four, 0.0000), 0.0000), 0.0000);
+@navbarInverseLinkColorActive:           darken(saturate(spin(@color_four, -0.0897), 0.8368), 28.2353);
 @navbarInverseLinkBackgroundHover:       #20282a;
 @navbarInverseLinkBackgroundActive:      @color_four;
 
@@ -274,7 +274,7 @@
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              #FD9C6D;
+@heroUnitBackground:              lighten(desaturate(spin(@color_four, 0.5960), 1.8659), 17.8431);
 @heroUnitHeadingColor:            @white;
 @heroUnitLeadColor:               @black;
 
