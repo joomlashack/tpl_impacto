@@ -111,7 +111,7 @@ defined('_JEXEC') or die('Restricted access');
 					</div>
 				</div>
 
-			<w:module name="debug" chrome="noe" />
+			<w:module name="debug" chrome="none" />
 			<!-- footer -->
 			<div class="wrapper-footer clearfix">
 			    <footer id="footer" <?php if ($this->params->get('stickyFooter',1)) : ?> class="sticky"<?php endif;?>>
